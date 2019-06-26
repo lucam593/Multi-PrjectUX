@@ -68,6 +68,93 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="queenok\about.html" />
+    <Content Include="queenok\blog_page.html" />
+    <Content Include="queenok\cart_page.html" />
+    <Content Include="queenok\category_page.html" />
+    <Content Include="queenok\checkout_page.html" />
+    <Content Include="queenok\contact_us.html" />
+    <Content Include="queenok\css\bootstrap.css" />
+    <Content Include="queenok\css\font-awesome.min.css" />
+    <Content Include="queenok\css\ionicons.min.css" />
+    <Content Include="queenok\css\jquery-ui.css" />
+    <Content Include="queenok\css\magnific-popup.css" />
+    <Content Include="queenok\css\owl.carousel.css" />
+    <Content Include="queenok\css\style.css" />
+    <Content Include="queenok\fonts\fontawesome-webfont.svg" />
+    <Content Include="queenok\fonts\ionicons.svg" />
+    <Content Include="queenok\images\about-page-gaando.jpg" />
+    <Content Include="queenok\images\blog\blog_img_01.jpg" />
+    <Content Include="queenok\images\blog\blog_img_02.jpg" />
+    <Content Include="queenok\images\blog\blog_img_03.jpg" />
+    <Content Include="queenok\images\blog\blog_img_04.jpg" />
+    <Content Include="queenok\images\blog\blog_img_05.jpg" />
+    <Content Include="queenok\images\blog\blog_img_06.jpg" />
+    <Content Include="queenok\images\blog\blog_img_07.jpg" />
+    <Content Include="queenok\images\blog\blog_img_08.jpg" />
+    <Content Include="queenok\images\brand\brand1.png" />
+    <Content Include="queenok\images\brand\brand2.png" />
+    <Content Include="queenok\images\brand\brand3.png" />
+    <Content Include="queenok\images\brand\brand4.png" />
+    <Content Include="queenok\images\brand\brand5.png" />
+    <Content Include="queenok\images\brand\brand6.png" />
+    <Content Include="queenok\images\brand\brand7.png" />
+    <Content Include="queenok\images\brand\brand8.png" />
+    <Content Include="queenok\images\brand\brand9.png" />
+    <Content Include="queenok\images\breadcrumb.jpg" />
+    <Content Include="queenok\images\close-icon-black.png" />
+    <Content Include="queenok\images\close-icon-color.png" />
+    <Content Include="queenok\images\favicon.png" />
+    <Content Include="queenok\images\footer-logo.png" />
+    <Content Include="queenok\images\left1.jpg" />
+    <Content Include="queenok\images\loder.gif" />
+    <Content Include="queenok\images\logo.png" />
+    <Content Include="queenok\images\main_banner1.jpg" />
+    <Content Include="queenok\images\main_banner2.jpg" />
+    <Content Include="queenok\images\menu-banner1.jpg" />
+    <Content Include="queenok\images\menu-banner2.jpg" />
+    <Content Include="queenok\images\menu-banner3.jpg" />
+    <Content Include="queenok\images\newsbg.jpg" />
+    <Content Include="queenok\images\product\70x84.jpg" />
+    <Content Include="queenok\images\product\product1-1.jpg" />
+    <Content Include="queenok\images\product\product1.jpg" />
+    <Content Include="queenok\images\product\product10-1.jpg" />
+    <Content Include="queenok\images\product\product10.jpg" />
+    <Content Include="queenok\images\product\product2-1.jpg" />
+    <Content Include="queenok\images\product\product2.jpg" />
+    <Content Include="queenok\images\product\product3-1.jpg" />
+    <Content Include="queenok\images\product\product3.jpg" />
+    <Content Include="queenok\images\product\product4-1.jpg" />
+    <Content Include="queenok\images\product\product4.jpg" />
+    <Content Include="queenok\images\product\product5-1.jpg" />
+    <Content Include="queenok\images\product\product5.jpg" />
+    <Content Include="queenok\images\product\product6-1.jpg" />
+    <Content Include="queenok\images\product\product6.jpg" />
+    <Content Include="queenok\images\product\product7-1.jpg" />
+    <Content Include="queenok\images\product\product7.jpg" />
+    <Content Include="queenok\images\product\product8-1.jpg" />
+    <Content Include="queenok\images\product\product8.jpg" />
+    <Content Include="queenok\images\product\product9-1.jpg" />
+    <Content Include="queenok\images\product\product9.jpg" />
+    <Content Include="queenok\images\sprite.png" />
+    <Content Include="queenok\images\sub1.jpg" />
+    <Content Include="queenok\images\sub2.jpg" />
+    <Content Include="queenok\images\sub3.jpg" />
+    <Content Include="queenok\images\sub4.jpg" />
+    <Content Include="queenok\images\sub5.jpg" />
+    <Content Include="queenok\images\sub6.jpg" />
+    <Content Include="queenok\images\tm1.jpg" />
+    <Content Include="queenok\images\tm2.jpg" />
+    <Content Include="queenok\images\tm3.jpg" />
+    <Content Include="queenok\images\tm4.jpg" />
+    <Content Include="queenok\images\tm5.jpg" />
+    <Content Include="queenok\images\user1.jpg" />
+    <Content Include="queenok\images\user2.jpg" />
+    <Content Include="queenok\images\user3.jpg" />
+    <Content Include="queenok\index.html" />
+    <Content Include="queenok\login.html" />
+    <Content Include="queenok\product_detail_page.html" />
+    <Content Include="queenok\single_blog.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -83,6 +170,17 @@
   <ItemGroup>
     <Content Include="HeaderMasterPage.Master" />
     <None Include="packages.config" />
+    <Content Include="queenok\contact_me.php" />
+    <Content Include="queenok\fonts\fontawesome-webfont.eot" />
+    <Content Include="queenok\fonts\fontawesome-webfont.ttf" />
+    <Content Include="queenok\fonts\fontawesome-webfont.woff" />
+    <Content Include="queenok\fonts\fontawesome-webfont.woff2" />
+    <Content Include="queenok\fonts\FontAwesome.otf" />
+    <Content Include="queenok\fonts\ionicons.eot" />
+    <Content Include="queenok\fonts\ionicons.ttf" />
+    <Content Include="queenok\fonts\ionicons.woff" />
+    <Content Include="queenok\images\brand\Thumbs.db" />
+    <Content Include="queenok\images\product\Thumbs.db" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -90,9 +188,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="queenok\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
