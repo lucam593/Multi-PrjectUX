@@ -481,11 +481,11 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HeaderMasterPage.Master.cs">
+    <Compile Include="Paginas\HeaderMasterPage.Master.cs">
       <DependentUpon>HeaderMasterPage.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="HeaderMasterPage.Master.designer.cs">
+    <Compile Include="Paginas\HeaderMasterPage.Master.designer.cs">
       <DependentUpon>HeaderMasterPage.Master</DependentUpon>
     </Compile>
     <Compile Include="Paginas\about.aspx.cs">
@@ -505,7 +505,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="HeaderMasterPage.Master" />
+    <Content Include="Paginas\HeaderMasterPage.Master" />
     <Content Include="boighor\fonts\bicon.eot" />
     <Content Include="boighor\fonts\bicon.ttf" />
     <Content Include="boighor\fonts\bicon.woff" />
