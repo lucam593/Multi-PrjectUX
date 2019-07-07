@@ -319,6 +319,7 @@
     <Content Include="Paginas\images\bg\1.jpg" />
     <Content Include="Paginas\images\bg\2.jpg" />
     <Content Include="Paginas\images\bg\3.jpg" />
+    <Content Include="Paginas\images\bg\3_old.jpg" />
     <Content Include="Paginas\images\bg\4.jpg" />
     <Content Include="Paginas\images\bg\5.jpg" />
     <Content Include="Paginas\images\bg\6.jpg" />
@@ -363,6 +364,7 @@
     <Content Include="Paginas\images\fancybox\fancybox_sprite%402x.png" />
     <Content Include="Paginas\images\fancybox\fancybox_sprite.png" />
     <Content Include="Paginas\images\favicon.ico" />
+    <Content Include="Paginas\images\favicon.png" />
     <Content Include="Paginas\images\icon.png" />
     <Content Include="Paginas\images\icons\blog-link-post2.png" />
     <Content Include="Paginas\images\icons\box.png" />
@@ -473,11 +475,11 @@
     <Content Include="Paginas\js\popper.min.js" />
     <Content Include="Paginas\js\vendor\jquery-3.2.1.min.js" />
     <Content Include="Paginas\js\vendor\modernizr-3.5.0.min.js" />
+    <Content Include="Paginas\product_details.aspx" />
     <Content Include="Paginas\style.css" />
     <Content Include="boighor\team.html" />
     <Content Include="boighor\wishlist.html" />
     <Content Include="Paginas\about.aspx" />
-    <Content Include="Paginas\product_details.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
