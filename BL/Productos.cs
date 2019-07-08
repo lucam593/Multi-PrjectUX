@@ -15,11 +15,15 @@ namespace BL
         public string Marca { get; set; }
         public int Categoria { get; set; }
         public int Existencias { get; set; }
-        public string Foto { get; set; }
+        public string Foto1 { get; set; }
+        public string Foto2 { get; set; }
+        public string Foto3 { get; set; }
+
         public string Video { get; set; }
 
         public Productos(int codigoProducto, string nombreProducto, string descripcionProducto,
-            int precioProducto, string marca, int categoria, int existencias, string foto, string video)
+            int precioProducto, string marca, int categoria, int existencias, string foto1, string foto2, string foto3,
+            string video)
         {
             CodigoProducto = codigoProducto;
             NombreProducto = nombreProducto;
@@ -28,12 +32,14 @@ namespace BL
             Marca = marca;
             Categoria = categoria;
             Existencias = existencias;
-            Foto = foto;
+            Foto1 = foto1;
+            Foto2 = foto2;
+            Foto3 = foto3;
             Video = video;
         }
 
         public Productos(int codigoProducto, string nombreProducto, string descripcionProducto,
-            int precioProducto, string marca, int categoria, int existencias, string foto)
+            int precioProducto, string marca, int categoria, int existencias, string foto1, string foto2, string foto3)
         {
             CodigoProducto = codigoProducto;
             NombreProducto = nombreProducto;
@@ -42,7 +48,9 @@ namespace BL
             Marca = marca;
             Categoria = categoria;
             Existencias = existencias;
-            Foto = foto;
+            Foto1 = foto1;
+            Foto2 = foto2;
+            Foto3 = foto3;
         }
 
         public Productos()

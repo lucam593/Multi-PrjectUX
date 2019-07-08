@@ -321,6 +321,7 @@
     <Content Include="Paginas\images\bg\3.jpg" />
     <Content Include="Paginas\images\bg\3_old.jpg" />
     <Content Include="Paginas\images\bg\4.jpg" />
+    <Content Include="Paginas\images\bg\4_old.jpg" />
     <Content Include="Paginas\images\bg\5.jpg" />
     <Content Include="Paginas\images\bg\6.jpg" />
     <Content Include="Paginas\images\bg\7.jpg" />
@@ -533,7 +534,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BL\BL.csproj">
+      <Project>{97a4bf45-0b5e-4eb5-8864-768687bd552e}</Project>
+      <Name>BL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
