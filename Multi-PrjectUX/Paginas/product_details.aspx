@@ -40,20 +40,22 @@
 
                                         <!-- Mosaico -->
                                         <section id="galeria">
-                                            <a href="productos\Producto 1 Mia Secret\Mia_Secret_F1.png">
-                                                <img src="productos\Producto 1 Mia Secret\Mia_Secret_F1.png" alt="">
+                                            <a href=<%= productoActual.Foto1 %>>
+                                                <img src=<%= productoActual.Foto1 %> alt="">
                                             </a>
-                                            <a href="productos\Producto 1 Mia Secret\Mia_Secret_F2.png">
-                                                <img src="productos\Producto 1 Mia Secret\Mia_Secret_F2.png" alt="">
+                                            <a href=<%= productoActual.Foto2 %>>
+                                                <img src=<%= productoActual.Foto2 %> alt="">
                                             </a>
-                                            <a href="productos\Producto 1 Mia Secret\Mia_Secret_F3.png">
-                                                <img src="productos\Producto 1 Mia Secret\Mia_Secret_F3.jpg" alt="">
+                                            <a href=<%= productoActual.Foto3 %>>
+                                                <img src=<%= productoActual.Foto3 %> alt="">
                                             </a>
+                                            <% if (productoActual.video != null && !productoActual.video.Equals("")) { %>
                                             <a href="productos/Producto 1 Mia Secret/Mia_Secret_Video.mp4">
                                                 <video height="240" width="360" controls>
                                                     <source src="productos/Producto 1 Mia Secret/Mia_Secret_Video.mp4" type="video/mp4">
                                                 </video>
                                             </a>
+                                            <% } %>
                                         </section>
                                         <!-- -->
                                     </div>
