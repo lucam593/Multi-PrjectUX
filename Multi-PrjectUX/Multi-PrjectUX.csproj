@@ -279,7 +279,7 @@
     <Content Include="boighor\shop-grid.html" />
     <Content Include="boighor\single-product.html" />
     <Content Include="boighor\style.css" />
-    <Content Include="Paginas\index.aspx" />
+    <Content Include="Paginas\index_page.aspx" />
     <Content Include="Paginas\css\bootstrap.min.css" />
     <Content Include="Paginas\css\custom.css" />
     <Content Include="Paginas\css\plugins.css" />
@@ -478,6 +478,17 @@
     <Content Include="Paginas\js\popper.min.js" />
     <Content Include="Paginas\js\vendor\jquery-3.2.1.min.js" />
     <Content Include="Paginas\js\vendor\modernizr-3.5.0.min.js" />
+    <Content Include="Paginas\productos\Producto 1 Mia Secret\Mia_Secret_F1.png" />
+    <Content Include="Paginas\productos\Producto 1 Mia Secret\Mia_Secret_F2.png" />
+    <Content Include="Paginas\productos\Producto 1 Mia Secret\Mia_Secret_F3.jpg" />
+    <Content Include="Paginas\productos\Producto 1 Mia Secret\Mia_Secret_Video.mp4" />
+    <Content Include="Paginas\productos\Producto 2 Environmental Remover Pack\Environmental_Remover_Pack_Video.mp4" />
+    <Content Include="Paginas\productos\Producto 2 Environmental Remover Pack\Env_Rem_Pack_F1.png" />
+    <Content Include="Paginas\productos\Producto 2 Environmental Remover Pack\Env_Rem_Pack_F2.png" />
+    <Content Include="Paginas\productos\Producto 2 Environmental Remover Pack\Env_Rem_Pack_F3.png" />
+    <Content Include="Paginas\productos\Producto 2 Environmental Remover Pack\Env_Rem_Pack_F4.jpg" />
+    <Content Include="Paginas\productos\Producto 3 Arobel Base Fortalecedora\Arobel_Base_Fortalecedora_F1.png" />
+    <Content Include="Paginas\productos\Producto 3 Arobel Base Fortalecedora\Arobel_Base_Fortalecedora_F2.jpg" />
     <Content Include="Paginas\product_details.aspx" />
     <Content Include="Paginas\style.css" />
     <Content Include="boighor\team.html" />
@@ -486,12 +497,12 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Paginas\index.aspx.cs">
-      <DependentUpon>index.aspx</DependentUpon>
+    <Compile Include="Paginas\index_page.aspx.cs">
+      <DependentUpon>index_page.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\index.aspx.designer.cs">
-      <DependentUpon>index.aspx</DependentUpon>
+    <Compile Include="Paginas\index_page.aspx.designer.cs">
+      <DependentUpon>index_page.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\HeaderMasterPage.Master.cs">
       <DependentUpon>HeaderMasterPage.Master</DependentUpon>
@@ -543,16 +554,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\BL\BL.csproj">
       <Project>{97a4bf45-0b5e-4eb5-8864-768687bd552e}</Project>
       <Name>BL</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Paginas\productos\Producto 1 Mia Secret\" />
-    <Folder Include="Paginas\productos\Producto 2 Environmental Remover Pack\" />
-    <Folder Include="Paginas\productos\Producto 3 Arobel Base Fortalecedora\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
