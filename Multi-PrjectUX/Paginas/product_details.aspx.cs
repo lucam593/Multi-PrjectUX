@@ -16,6 +16,7 @@ namespace Multi_PrjectUX.Paginas
 
         protected void Page_Init(object sender, EventArgs e)
         {
+
             //Este será el producto que determine los datos que se mostrarán en el formulario.
             productoActual = (Productos)Session["productoActual"];
 
@@ -26,6 +27,16 @@ namespace Multi_PrjectUX.Paginas
                     10000, "Marca 1", 1, 1, "images/product/1.jpg", "images / product / 2.jpg", "images / product / 2.jpg");
                 categoriaActual = new Categorias(10, "Categoría 1", "Descripción");
             }
+        }
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void AgregarACarrito(object sender, EventArgs e)
+        {
+
         }
     }
 }

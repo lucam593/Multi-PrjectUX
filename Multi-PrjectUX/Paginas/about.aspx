@@ -57,7 +57,7 @@
                     <div class="col-lg-6 col-sm-12 col-12">
                         <div class="content text-left text_style--2">
                             <h2>Nuestro mercado meta</h2>
-                            <img src="images/bg/3.jpg" alt="Team images">
+                            <img height="593" width="381" src="images/lenguaje_signos.png" alt="Team images">
                         </div>
                     </div>
                     <div class="col-lg-6 col-sm-12 col-12">
@@ -78,6 +78,9 @@
                                 tenemos una variedad de productos cosméticos que los distintos grupos pueden 
                                 adquirir a un precio único, además, ofrecemos una garantía para cada uno de ellos 
                                 y de esta manera, garantizar la satisfacción de todos nuestros clientes.
+
+                                Contamos con un interés particular por la atención de personas con problemas
+                                auditivos, siendo 
                             </p>
                             <h5>Ubicación</h5>
                             <p>Centro de San Ramón, Alajuela</p>
@@ -92,73 +95,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="section__title--3 text-center">
-                            <h2>Meet our team of experts</h2>
-                            <p>the right people for your project</p>
-                        </div>
+                     
                     </div>
-                </div>
-                <div class="row">
-                    <!-- Start Single Team -->
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                        <div class="wn__team">
-                            <div class="thumb">
-                                <img src="images/about/team/1.jpg" alt="Team images">
-                            </div>
-                            <div class="content text-center">
-                                <h4>JOHN SMITH</h4>
-                                <p>Manager</p>
-                                <ul class="team__social__net">
-                                    <li><a href="#"><i class="icon-social-twitter icons"></i></a></li>
-                                    <li><a href="#"><i class="icon-social-tumblr icons"></i></a></li>
-                                    <li><a href="#"><i class="icon-social-facebook icons"></i></a></li>
-                                    <li><a href="#"><i class="icon-social-linkedin icons"></i></a></li>
-                                    <li><a href="#"><i class="icon-social-pinterest icons"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Team -->
-                    <!-- Start Single Team -->
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                        <div class="wn__team">
-                            <div class="thumb">
-                                <img src="images/about/team/2.jpg" alt="Team images">
-                            </div>
-                            <div class="content text-center">
-                                <h4>ALICE KIM</h4>
-                                <p>Co-Founder</p>
-                                <ul class="team__social__net">
-                                    <li><a href="#"><i class="icon-social-twitter icons"></i></a></li>
-                                    <li><a href="#"><i class="icon-social-tumblr icons"></i></a></li>
-                                    <li><a href="#"><i class="icon-social-facebook icons"></i></a></li>
-                                    <li><a href="#"><i class="icon-social-linkedin icons"></i></a></li>
-                                    <li><a href="#"><i class="icon-social-pinterest icons"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Team -->
-                    <!-- Start Single Team -->
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                        <div class="wn__team">
-                            <div class="thumb">
-                                <img src="images/about/team/3.jpg" alt="Team images">
-                            </div>
-                            <div class="content text-center">
-                                <h4>VICTORIA DOE</h4>
-                                <p>Marketer</p>
-                                <ul class="team__social__net">
-                                    <li><a href="#"><i class="icon-social-twitter icons"></i></a></li>
-                                    <li><a href="#"><i class="icon-social-tumblr icons"></i></a></li>
-                                    <li><a href="#"><i class="icon-social-facebook icons"></i></a></li>
-                                    <li><a href="#"><i class="icon-social-linkedin icons"></i></a></li>
-                                    <li><a href="#"><i class="icon-social-pinterest icons"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Team -->
                 </div>
             </div>
         </section>
