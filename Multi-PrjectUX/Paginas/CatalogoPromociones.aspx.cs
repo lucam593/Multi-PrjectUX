@@ -12,6 +12,7 @@ namespace Multi_PrjectUX.Paginas
     {
         List<Productos> productosPromo;
 
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -20,9 +21,10 @@ namespace Multi_PrjectUX.Paginas
         public List<Productos> cargarProductosPromo()
         {
             ListaProductos productos = new ListaProductos();
+            List<Productos> productosCatalogo = productos.cargarProductos();
             productosPromo = productos.cargarProductos();
 
-            foreach (Productos productPromo in productosPromo)
+            foreach (Productos productPromo in productosCatalogo)
             {
                 if (productPromo.Promocion == false)
                 {
