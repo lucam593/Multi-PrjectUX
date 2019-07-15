@@ -952,6 +952,20 @@ a {
     background-position: center center;
 }
 
+.bg-image--prodhome {
+    background-image: url(productos/Otros_productos/facial.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-image--citashome {
+    background-image: url(productos/Otros_productos/citas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
 .img-lenguaje-signos {
     background-image: url(images/lenguajes_signos.png);
     background-repeat: no-repeat;
@@ -4401,7 +4415,7 @@ h3.widget-title-modal {
 }
 
 .slide .slider__content h2 {
-    color: #3c3c3c;
+    color: #e8e8e8;
     font-size: 68px;
     font-family: poppins;
     font-weight: 700;
@@ -4429,7 +4443,7 @@ h3.widget-title-modal {
 }
 
 .slide .slider__content a.shopbtn {
-    color: #333;
+    color: #e8e8e8;
     display: inline-block;
     font-size: 14px;
     font-weight: 600;
@@ -4451,11 +4465,11 @@ h3.widget-title-modal {
     }
 
     .slide .slider__content a.shopbtn:hover {
-        color: #e59285;
+        color: #35acac;
     }
 
 .slider--15 .slide .slider__content h2 span {
-    color: #ce7852;
+    color: #72cfcf;
 }
 
 .slider--15 .slide .slider__content h1 {
@@ -4479,7 +4493,7 @@ h3.widget-title-modal {
 }
 
 .slider--15 .slide .slider__content a:hover {
-    color: #ce7852;
+    color: #35acac;
 }
 
 .slide__arrow01 {
@@ -8803,6 +8817,101 @@ a.checkout__title {
     right: 0;
     top: 51%;
 }
+
+hr {
+    border: 0;
+    margin: 1.35em auto;
+    max-width: 100%;
+    background-position: 50%;
+    box-sizing: border-box;
+}
+
+.accessory {
+    height: 6px;
+    background-image: radial-gradient( closest-side, hsla(0, 0%, 50%, 1.0), hsla(0, 0%, 50%, 0) 100%);
+    position: relative;
+}
+
+    .accessory:after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        background-color: hsl(0, 0%, 75%);
+        height: 12px;
+        width: 12px;
+        transform: rotate(45deg);
+        margin-top: -10px;
+        margin-left: -10px;
+        border-radius: 4px 0;
+        border: 4px solid hsla(0, 0%, 100%, 0.35);
+        background-clip: padding-box;
+        box-shadow: -10px 10px 0 hsla(0, 0%, 100%, 0.15), 10px -10px 0 hsla(0, 0%, 100%, 0.15);
+    }
+
+.info-button {
+    background: #1AAB8A;
+    color: #fff;
+    border: none;
+    position: relative;
+    height: 60px;
+    font-size: 1.6em;
+    padding: 0 2em;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+}
+
+    .info-button:hover {
+        background: #fff;
+        color: #1AAB8A;
+    }
+
+    .info-button:before, .info-button:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 2px;
+        width: 0;
+        background: #1AAB8A;
+        transition: 400ms ease all;
+    }
+
+    .info-button:after {
+        right: inherit;
+        top: inherit;
+        left: 0;
+        bottom: 0;
+    }
+
+    .info-button:hover:before, .info-button:hover:after {
+        width: 100%;
+        transition: 800ms ease all;
+    }
+
+
+
+
+.info-banner {
+    background-image: url(productos/Otros_productos/slide6.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    max-width: 100% !important;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    text-align: justify;
+    color: white;
+    padding-left: 40px;
+}
+
+.letra-cincel {
+    font-family: 'Cinzel Decorative', sans-serif !important;
+}
+
 
 .best-seel-area .product .product__content {
     padding: 0;
