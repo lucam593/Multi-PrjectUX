@@ -12,6 +12,7 @@ namespace Multi_PrjectUX
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+           
         }
     }
 }

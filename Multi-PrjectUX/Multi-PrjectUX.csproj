@@ -497,6 +497,7 @@
     <Content Include="Paginas\productos\Otros_productos\7.jpg" />
     <Content Include="Paginas\productos\Otros_productos\8.jpg" />
     <Content Include="Paginas\productos\Otros_productos\9.jpg" />
+    <Content Include="Paginas\productos\Otros_productos\face.jpg" />
     <Content Include="Paginas\productos\Producto_1_Mia_Secret\Mia_Secret_F1.png" />
     <Content Include="Paginas\productos\Producto_1_Mia_Secret\Mia_Secret_F2.png" />
     <Content Include="Paginas\productos\Producto_1_Mia_Secret\Mia_Secret_F3.jpg" />
@@ -597,6 +598,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\BL\BL.csproj">
       <Project>{97a4bf45-0b5e-4eb5-8864-768687bd552e}</Project>
