@@ -553,7 +553,6 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\BL\BL.csproj">
       <Project>{97a4bf45-0b5e-4eb5-8864-768687bd552e}</Project>

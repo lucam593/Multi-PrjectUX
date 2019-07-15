@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Paginas/HeaderMasterPage.Master" AutoEventWireup="true" CodeBehind="product_details.aspx.cs" Inherits="Multi_PrjectUX.Paginas.product_details" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Paginas/HeaderMasterPage.Master" EnableEventValidation="false" AutoEventWireup="true" CodeBehind="product_details.aspx.cs" Inherits="Multi_PrjectUX.Paginas.product_details" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -36,26 +36,30 @@
                         <div class="wn__single__product">
                             <div class="row">
                                 <div class="col-lg-6 col-12">
-                                    <div class="wn__fotorama__wrapper">
+                                    <div class="wn__fotorama__wrapper align">
 
                                         <!-- Mosaico -->
-                                        <section id="galeria">
-                                            <a href="productos\Producto 1 Mia Secret\Mia_Secret_F1.png">
-                                                <img src="productos\Producto 1 Mia Secret\Mia_Secret_F1.png" alt="">
+                                        <div class="grid-gallery">
+                                            <a class="grid-gallery__item" href=<%= productoActual.Foto1 %>>
+                                                <img class="grid-gallery__image" src=<%= productoActual.Foto1 %> alt="">
                                             </a>
-                                            <a href="productos\Producto 1 Mia Secret\Mia_Secret_F2.png">
-                                                <img src="productos\Producto 1 Mia Secret\Mia_Secret_F2.png" alt="">
+                                            <a class="grid-gallery__item" href=<%= productoActual.Foto2 %>>
+                                                <img class="grid-gallery__image" src=<%= productoActual.Foto2 %> alt="">
                                             </a>
-                                            <a href="productos\Producto 1 Mia Secret\Mia_Secret_F3.png">
-                                                <img src="productos\Producto 1 Mia Secret\Mia_Secret_F3.jpg" alt="">
+                                            <a class="grid-gallery__item" href=<%= productoActual.Foto3 %>>
+                                                <img class="grid-gallery__image" src=<%= productoActual.Foto3 %> alt="">
                                             </a>
-                                            <a href="productos/Producto 1 Mia Secret/Mia_Secret_Video.mp4">
-                                                <video height="240" width="360" controls>
-                                                    <source src="productos/Producto 1 Mia Secret/Mia_Secret_Video.mp4" type="video/mp4">
+
+                                            <%if (productoActual.Video != null && !productoActual.Video.Equals("")) { %>
+                                            <a class="grid-gallery__item" href=<%= productoActual.Video %>>
+                                                <video class="grid-gallery__image" height="240" width="360" controls>
+                                                    <source src=<%= productoActual.Video %> type="video/mp4">
                                                 </video>
                                             </a>
-                                        </section>
+                                            <% } %>
+                                        </div>
                                         <!-- -->
+
                                     </div>
 
                                 </div>
@@ -80,7 +84,8 @@
 
                                         <div class="box-tocart d-flex">
                                             <span>Cantidad</span>
-                                            <input id="qty" class="input-text qty" name="qty" min="1" value="1" title="Qty" type="number">
+                                            <!--<input id="qty" class="input-text qty" name="qty" min="1" value="1" title="Qty" type="number">-->
+                                            <asp:TextBox TextMode="Number" ID="qty" class="input-text qty" runat="server" min="0" text="0" step="1"/>
                                             <div class="addtocart__actions">
                                                 <asp:Button CssClass="tocart" runat="server" text="Añadir a Carrito" OnClick="AgregarACarrito"/> 
                                             </div>
