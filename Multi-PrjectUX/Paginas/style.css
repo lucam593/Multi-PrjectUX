@@ -74,6 +74,8 @@ Reset Styles
     box-sizing: border-box;
 }
 
+
+
 article,
 aside,
 details,
@@ -9010,3 +9012,35 @@ hr {
         padding-bottom: 60px;
     }
 }
+/* Arrow & Hover Animation */
+/* Arrow & Hover Animation */
+#more-arrows {
+    width: 75px;
+    height: 65px;
+}
+
+    #more-arrows:hover polygon {
+        fill: #fff;
+        transition: all 0.2s ease-out;
+    }
+
+        #more-arrows:hover polygon.arrow-bottom {
+            transform: translateY(-18px);
+        }
+
+        #more-arrows:hover polygon.arrow-top {
+            transform: translateY(18px);
+        }
+
+polygon {
+    fill: #fff;
+    transition: all 0.2s ease-out;
+}
+
+    polygon.arrow-middle {
+        opacity: 0.75;
+    }
+
+    polygon.arrow-top {
+        opacity: 0.5;
+    }

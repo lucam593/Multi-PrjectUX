@@ -609,6 +609,7 @@
     <Content Include="Paginas\fonts\slick.eot" />
     <Content Include="Paginas\fonts\slick.ttf" />
     <Content Include="Paginas\fonts\slick.woff" />
+    <Content Include="Paginas\css\arrow.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

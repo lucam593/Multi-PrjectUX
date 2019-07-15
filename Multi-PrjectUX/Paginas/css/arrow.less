@@ -1,0 +1,32 @@
+﻿// Button/Arrow
+#arrow-down {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    animation: jump 5s infinite;
+
+
+    i {
+        content: '\f0a8';
+        font-family: 'FontAwesome';
+        font-size: 80px;
+        color: #13b3b3;
+    }
+
+    i:hover {
+        color: #FFAAAA;
+    }
+}
+@keyframes jump {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: 50px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
