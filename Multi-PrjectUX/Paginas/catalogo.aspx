@@ -9,11 +9,11 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="bradcaump__inner text-center">
-                        	<h2 class="bradcaump-title">Portfolio</h2>
+                        	<h2 class="bradcaump-title">Catálogo</h2>
                             <nav class="bradcaump-content">
-                              <a class="breadcrumb_item" href="index_page.aspx">Home</a>
+                              <a class="breadcrumb_item" href="index_page.aspx">Inicio</a>
                               <span class="brd-separetor">/</span>
-                              <span class="breadcrumb_item active">Portfolio</span>
+                              <span class="breadcrumb_item active">Catálogo</span>
                             </nav>
                         </div>
                     </div>

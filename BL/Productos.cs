@@ -13,7 +13,7 @@ namespace BL
         public string DescripcionProducto { get; set; }
         public int PrecioProducto { get; set; }
         public string Marca { get; set; }
-        public int Categoria { get; set; }
+        public string Categoria { get; set; }
         public int Existencias { get; set; }
         public string Foto1 { get; set; }
         public string Foto2 { get; set; }
@@ -24,7 +24,7 @@ namespace BL
         public int Cantidad { get; set; }
 
         public Productos(int codigoProducto, string nombreProducto, string descripcionProducto,
-            int precioProducto, string marca, int categoria, int existencias, string foto1, string foto2, string foto3,
+            int precioProducto, string marca, string categoria, int existencias, string foto1, string foto2, string foto3,
             string video)
         {
             CodigoProducto = codigoProducto;
@@ -43,7 +43,7 @@ namespace BL
         }
 
         public Productos(int codigoProducto, string nombreProducto, string descripcionProducto,
-            int precioProducto, string marca, int categoria, int existencias, string foto1, string foto2, string foto3)
+            int precioProducto, string marca, string categoria, int existencias, string foto1, string foto2, string foto3)
         {
             CodigoProducto = codigoProducto;
             NombreProducto = nombreProducto;
