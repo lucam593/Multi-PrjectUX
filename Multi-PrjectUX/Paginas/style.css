@@ -8739,6 +8739,10 @@ a.checkout__title {
     text-align: justify;
     color: white;
     padding-left: 40px;
+    
+}
+
+.letra-cincel {
     font-family: 'Cinzel Decorative', sans-serif !important;
 }
 
