@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Paginas/HeaderMasterPage.Master" AutoEventWireup="true" CodeBehind="catalogo.aspx.cs" Inherits="Multi_PrjectUX.Paginas.catalogo" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+        <link href="//fonts.googleapis.com/css?family=Cinzel Decorative&subset=latin" rel="stylesheet" type="text/css">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     		
@@ -26,8 +27,8 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-lg-12" style="background-color:whitesmoke">
-                        
-                            <h2 class="text-center">Categorías</h2>
+                       <br />   
+                            <h2 class="text-center letra-cincel">CATEGORÍAS</h2>
                           
 						<div class="gallery__menu" >
                             <button type="button" data-filter="*" class="is-checked"><h5>Todo</h5></button>

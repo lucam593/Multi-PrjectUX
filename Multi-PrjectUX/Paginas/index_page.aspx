@@ -57,7 +57,7 @@
                     <h2 class="letra-cincel" style="color:#0d6767;">CATÁLOGO</h2>
                     <p style="text-align: justify;">Todos nuestros productos cuentan con la mayor calidad del mercado, todo en funcion del cuidado personal de nuestros clientes, siempre es un gusto servirles</p>
                       <br />
-                    <a  class="info-button" href="#" style=" font-family: 'Almendra', sans-serif;">Ver </a>
+                    <a  class="info-button" href="catalogo.aspx" style=" font-family: 'Almendra', sans-serif;">Ver </a>
 
                 </div>
                 <div class="col-lg-12 text-center justify-content-center" style="height:225px;padding: 36px;">
