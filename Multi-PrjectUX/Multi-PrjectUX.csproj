@@ -279,6 +279,11 @@
     <Content Include="boighor\shop-grid.html" />
     <Content Include="boighor\single-product.html" />
     <Content Include="boighor\style.css" />
+    <Content Include="Paginas\catalogo.aspx" />
+    <Content Include="Paginas\fonts\bicon.svg" />
+    <Content Include="Paginas\fonts\fontawesome-webfont.svg" />
+    <Content Include="Paginas\fonts\Simple-Line-Icons.svg" />
+    <Content Include="Paginas\fonts\slick.svg" />
     <Content Include="Paginas\index_page.aspx" />
     <Content Include="Paginas\css\bootstrap.min.css" />
     <Content Include="Paginas\css\custom.css" />
@@ -477,17 +482,17 @@
     <Content Include="Paginas\js\popper.min.js" />
     <Content Include="Paginas\js\vendor\jquery-3.2.1.min.js" />
     <Content Include="Paginas\js\vendor\modernizr-3.5.0.min.js" />
-    <Content Include="Paginas\productos\Producto 1 Mia Secret\Mia_Secret_F1.png" />
-    <Content Include="Paginas\productos\Producto 1 Mia Secret\Mia_Secret_F2.png" />
-    <Content Include="Paginas\productos\Producto 1 Mia Secret\Mia_Secret_F3.jpg" />
-    <Content Include="Paginas\productos\Producto 1 Mia Secret\Mia_Secret_Video.mp4" />
-    <Content Include="Paginas\productos\Producto 2 Environmental Remover Pack\Environmental_Remover_Pack_Video.mp4" />
-    <Content Include="Paginas\productos\Producto 2 Environmental Remover Pack\Env_Rem_Pack_F1.png" />
-    <Content Include="Paginas\productos\Producto 2 Environmental Remover Pack\Env_Rem_Pack_F2.png" />
-    <Content Include="Paginas\productos\Producto 2 Environmental Remover Pack\Env_Rem_Pack_F3.png" />
-    <Content Include="Paginas\productos\Producto 2 Environmental Remover Pack\Env_Rem_Pack_F4.jpg" />
-    <Content Include="Paginas\productos\Producto 3 Arobel Base Fortalecedora\Arobel_Base_Fortalecedora_F1.png" />
-    <Content Include="Paginas\productos\Producto 3 Arobel Base Fortalecedora\Arobel_Base_Fortalecedora_F2.jpg" />
+    <Content Include="Paginas\productos\Producto_1_Mia_Secret\Mia_Secret_F1.png" />
+    <Content Include="Paginas\productos\Producto_1_Mia_Secret\Mia_Secret_F2.png" />
+    <Content Include="Paginas\productos\Producto_1_Mia_Secret\Mia_Secret_F3.jpg" />
+    <Content Include="Paginas\productos\Producto_1_Mia_Secret\Mia_Secret_Video.mp4" />
+    <Content Include="Paginas\productos\Producto_2_Environmental_Remover_Pack\Environmental_Remover_Pack_Video.mp4" />
+    <Content Include="Paginas\productos\Producto_2_Environmental_Remover_Pack\Env_Rem_Pack_F1.png" />
+    <Content Include="Paginas\productos\Producto_2_Environmental_Remover_Pack\Env_Rem_Pack_F2.png" />
+    <Content Include="Paginas\productos\Producto_2_Environmental_Remover_Pack\Env_Rem_Pack_F3.png" />
+    <Content Include="Paginas\productos\Producto_2_Environmental_Remover_Pack\Env_Rem_Pack_F4.jpg" />
+    <Content Include="Paginas\productos\Producto_3_Arobel_Base_Fortalecedora\Arobel_Base_Fortalecedora_F1.png" />
+    <Content Include="Paginas\productos\Producto_3_Arobel_Base_Fortalecedora\Arobel_Base_Fortalecedora_F2.jpg" />
     <Content Include="Paginas\product_details.aspx" />
     <Content Include="boighor\team.html" />
     <Content Include="boighor\wishlist.html" />
@@ -496,6 +501,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Paginas\catalogo.aspx.cs">
+      <DependentUpon>catalogo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\catalogo.aspx.designer.cs">
+      <DependentUpon>catalogo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Paginas\index_page.aspx.cs">
       <DependentUpon>index_page.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -546,6 +558,23 @@
     <Content Include="boighor\fonts\slick.ttf" />
     <Content Include="boighor\fonts\slick.woff" />
     <None Include="packages.config" />
+    <Content Include="Paginas\fonts\bicon.eot" />
+    <Content Include="Paginas\fonts\bicon.ttf" />
+    <Content Include="Paginas\fonts\bicon.woff" />
+    <Content Include="Paginas\fonts\fontawesome-webfont-1.eot" />
+    <Content Include="Paginas\fonts\fontawesome-webfont.eot" />
+    <Content Include="Paginas\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Paginas\fonts\fontawesome-webfont.woff" />
+    <Content Include="Paginas\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Paginas\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="Paginas\fonts\Simple-Line-Icons.eot" />
+    <Content Include="Paginas\fonts\Simple-Line-Icons.ttf" />
+    <Content Include="Paginas\fonts\Simple-Line-Icons.woff" />
+    <Content Include="Paginas\fonts\Simple-Line-Icons.woff2" />
+    <Content Include="Paginas\fonts\slick-1.eot" />
+    <Content Include="Paginas\fonts\slick.eot" />
+    <Content Include="Paginas\fonts\slick.ttf" />
+    <Content Include="Paginas\fonts\slick.woff" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
