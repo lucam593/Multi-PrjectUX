@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Categorias.cs" />
+    <Compile Include="ListaProductos.cs" />
     <Compile Include="Productos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Servicios.cs" />
