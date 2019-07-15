@@ -477,10 +477,10 @@
     <Content Include="Paginas\js\vendor\jquery-3.2.1.min.js" />
     <Content Include="Paginas\js\vendor\modernizr-3.5.0.min.js" />
     <Content Include="Paginas\product_details.aspx" />
-    <Content Include="Paginas\style.css" />
     <Content Include="boighor\team.html" />
     <Content Include="boighor\wishlist.html" />
     <Content Include="Paginas\about.aspx" />
+    <Content Include="Paginas\style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
