@@ -279,6 +279,7 @@
     <Content Include="boighor\shop-grid.html" />
     <Content Include="boighor\single-product.html" />
     <Content Include="boighor\style.css" />
+    <Content Include="Paginas\Carrito.aspx" />
     <Content Include="Paginas\catalogo.aspx" />
     <Content Include="Paginas\fonts\bicon.svg" />
     <Content Include="Paginas\fonts\fontawesome-webfont.svg" />
@@ -518,6 +519,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Paginas\Carrito.aspx.cs">
+      <DependentUpon>Carrito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Carrito.aspx.designer.cs">
+      <DependentUpon>Carrito.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Paginas\catalogo.aspx.cs">
       <DependentUpon>catalogo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
