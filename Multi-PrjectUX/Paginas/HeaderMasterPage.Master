@@ -31,6 +31,7 @@
 
     <!-- Modernizer js -->
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -43,7 +44,7 @@
                     <div class="row">
                         <div class="col-md-4 col-sm-4 col-7 col-lg-2">
                             <div class="logo">
-                                <a href="index.html">
+                                <a href="index.aspx">
                                     <img src="images/logo/logo.png" alt="logo images">
                                 </a>
                             </div>
@@ -94,7 +95,6 @@
                                                 <li><a href="my-account.html">My Account</a></li>
                                                 <li><a href="cart.html">Cart Page</a></li>
                                                 <li><a href="checkout.html">Checkout Page</a></li>
-                                                <li><a href="wishlist.html">Wishlist Page</a></li>
                                                 <li><a href="error404.html">404 Page</a></li>
                                                 <li><a href="faq.html">Faq Page</a></li>
                                                 <li><a href="team.html">Team Page</a></li>
@@ -107,7 +107,7 @@
                         </div>
                         <div class="col-md-8 col-sm-8 col-5 col-lg-2">
                             <ul class="header__sidebar__right d-flex justify-content-end align-items-center">
-                                
+
                                 <li class="shopcart"><a class="cartbox_active" href="#"><span class="product_qun">3</span></a>
                                     <!-- Start Shopping Cart -->
                                     <div class="block-minicart minicart__active">

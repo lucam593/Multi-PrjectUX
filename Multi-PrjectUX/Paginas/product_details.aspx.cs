@@ -12,7 +12,6 @@ namespace Multi_PrjectUX.Paginas
     public partial class product_details : System.Web.UI.Page
     {
         public Productos productoActual { set; get; }
-        public Categorias categoriaActual { set; get; }
 
         protected void Page_Init(object sender, EventArgs e)
         {
@@ -23,8 +22,8 @@ namespace Multi_PrjectUX.Paginas
             if (productoActual == null)
             {
                 productoActual = new Productos(111, "Producto Prueba", "Esta información es solo para prueba",
-                    10000, "Marca 1", 1, 1, "images/product/1.jpg", "images/product/2.jpg", "images/product/2.jpg");
-                categoriaActual = new Categorias(10, "Categoría 1", "Descripción");
+                    10000, "Marca 1", "Categoria Prueba", 1, "images/product/1.jpg", "images/product/2.jpg", "images/product/2.jpg",
+                    "productos/Producto_1_Mia_Secret/Mia_Secret_Video.mp4");
             }
         }
 

@@ -44,10 +44,11 @@
 					<div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-12 gallery__item cat--<% Response.Write(i.ToString()); i++;%>">
 						<div class="portfolio">
 							<div class="thumb">
-                                <%Session["productoActual"] = item; %>
-								<a href="portfolio-details.aspx">
+                                
+								<a href="product_details.aspx">
+                                    <%Session["productoActual"] = item; %>
 									<img width="336" height="374" src="<%Response.Write(item.Foto1.ToString());%>" " alt="portfolio images">
-								</a>
+                                </a>
 								<div class="link">
 									<a href="portfolio-details.html"><i class="fa fa-eye"></i></a>
 								</div>
