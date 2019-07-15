@@ -53,7 +53,7 @@
                                 <ul class="meninmenu d-flex justify-content-start">
                                     <li class="drop with--one--item"><a href="index_page.aspx">Inicio</a></li>
                                     <li class="drop"><a href="catalogo.aspx">Catálogo</a></li>
-                                    <li class="drop"><a href="shop-grid.html">Promociones</a></li>
+                                    <li class="drop"><a href="CatalogoPromociones.aspx">Promociones</a></li>
                                     <li class="drop"><a href="#">Agendar Cita</a></li>
                                     <li><a href="about.aspx">Sobre Nosotros</a></li>
                                 </ul>

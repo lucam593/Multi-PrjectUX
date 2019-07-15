@@ -63,6 +63,7 @@ namespace BL
                 "productos\\Otros_productos\\25.jpg",
                 "productos\\Otros_productos\\26.jpg",
                 "productos\\Otros_productos\\27.jpg");
+            productPromo1.Promocion = true;
 
             productos.Add(productPromo1);
 
@@ -70,6 +71,7 @@ namespace BL
                 "productos\\Otros_productos\\28.jpg",
                 "productos\\Otros_productos\\29.jpg",
                 "productos\\Otros_productos\\30.jpg");
+            productPromo2.Promocion = true;
 
             productos.Add(productPromo2);
 
@@ -77,6 +79,7 @@ namespace BL
                 "productos\\Otros_productos\\31.jpg",
                 "productos\\Otros_productos\\32.jpg",
                 "productos\\Otros_productos\\33.jpg");
+            productPromo3.Promocion = true;
 
             productos.Add(productPromo3);
 
@@ -84,6 +87,7 @@ namespace BL
                "productos\\Otros_productos\\34.jpg",
                "productos\\Otros_productos\\35.jpg",
                "productos\\Otros_productos\\36.jpg");
+            productPromo4.Promocion = true;
 
             productos.Add(productPromo4);
 
