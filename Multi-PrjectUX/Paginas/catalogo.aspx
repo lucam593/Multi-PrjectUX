@@ -25,15 +25,15 @@
 		<section class="wn__portfolio__area gallery__masonry__activation bg--white mt--40 pb--100">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-lg-12">
+					<div class="col-lg-12" style="background-color:whitesmoke">
                         
                             <h2 class="text-center">Categorías</h2>
                           
-						<div class="gallery__menu">
-                            <button type="button" data-filter="*" class="is-checked">Todo</button>
-                            <button type="button" data-filter=".cremas">Cremas</button>
-                            <button type="button" data-filter=".unas">Uñas</button>
-                            <button type="button" data-filter=".facial">Facial</button>
+						<div class="gallery__menu" >
+                            <button type="button" data-filter="*" class="is-checked"><h5>Todo</h5></button>
+                            <button type="button" data-filter=".cremas"><h5>Cremas</h5></button>
+                            <button type="button" data-filter=".unas"><h5>Uñas</h5></button>
+                            <button type="button" data-filter=".facial"><h5>Facial</h5></button>
                       	</div>
 					</div>
 				</div>
