@@ -20,13 +20,13 @@ namespace Multi_PrjectUX.Paginas
         {
             List<Productos> lista = (List<Productos>)Session["Productos"];
 
-            foreach (Productos p in lista)
+           /* foreach (Productos p in lista)
             {
                 p.EnCarrito = true;
             }
 
             listaCarrito.DataSource = lista;
-            listaCarrito.DataBind();
+            listaCarrito.DataBind();*/
 
         }
 

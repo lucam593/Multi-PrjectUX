@@ -281,6 +281,7 @@
     <Content Include="boighor\style.css" />
     <Content Include="Paginas\Carrito.aspx" />
     <Content Include="Paginas\catalogo.aspx" />
+    <Content Include="Paginas\CatalogoPromociones.aspx" />
     <Content Include="Paginas\fonts\bicon.svg" />
     <Content Include="Paginas\fonts\fontawesome-webfont.svg" />
     <Content Include="Paginas\fonts\Simple-Line-Icons.svg" />
@@ -532,6 +533,13 @@
     </Compile>
     <Compile Include="Paginas\catalogo.aspx.designer.cs">
       <DependentUpon>catalogo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\CatalogoPromociones.aspx.cs">
+      <DependentUpon>CatalogoPromociones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\CatalogoPromociones.aspx.designer.cs">
+      <DependentUpon>CatalogoPromociones.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\index_page.aspx.cs">
       <DependentUpon>index_page.aspx</DependentUpon>
