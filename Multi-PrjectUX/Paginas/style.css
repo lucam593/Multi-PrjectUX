@@ -74,6 +74,8 @@ Reset Styles
     box-sizing: border-box;
 }
 
+
+
 article,
 aside,
 details,
@@ -103,6 +105,7 @@ video {
 }
 
 html {
+    scroll-behavior: smooth;
     font-size: 100%;
     overflow-y: scroll;
     -webkit-text-size-adjust: 100%;
@@ -4469,7 +4472,7 @@ h3.widget-title-modal {
     }
 
 .slider--15 .slide .slider__content h2 span {
-    color: #72cfcf;
+    color: #00dbc7;
 }
 
 .slider--15 .slide .slider__content h1 {
@@ -9010,3 +9013,35 @@ hr {
         padding-bottom: 60px;
     }
 }
+/* Arrow & Hover Animation */
+/* Arrow & Hover Animation */
+#more-arrows {
+    width: 75px;
+    height: 65px;
+}
+
+    #more-arrows:hover polygon {
+        fill: #fff;
+        transition: all 0.2s ease-out;
+    }
+
+        #more-arrows:hover polygon.arrow-bottom {
+            transform: translateY(-18px);
+        }
+
+        #more-arrows:hover polygon.arrow-top {
+            transform: translateY(18px);
+        }
+
+polygon {
+    fill: #fff;
+    transition: all 0.2s ease-out;
+}
+
+    polygon.arrow-middle {
+        opacity: 0.75;
+    }
+
+    polygon.arrow-top {
+        opacity: 0.5;
+    }

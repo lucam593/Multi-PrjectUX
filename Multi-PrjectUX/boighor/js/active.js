@@ -52,6 +52,13 @@
         scrollSpeed: 900,
         animation: 'slide'
     });
+    $.arrow-down({
+        scrollText: '<i class="fa fa-chevron-down"></i>',
+        easingType: 'linear',
+        scrollSpeed: 900,
+        animation: 'slide'
+    });
+    
 
 /*=========== Mobile Menu ===========*/
     $('nav.mobilemenu__nav').meanmenu({

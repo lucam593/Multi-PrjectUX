@@ -2,6 +2,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="//fonts.googleapis.com/css?family=Cinzel Decorative&subset=latin" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Almendra&subset=latin" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet/less" type="text/css" href="css/arrow.less" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <!-- Start Slider area -->
@@ -44,20 +47,23 @@
             <!-- End Single Slide -->
         </div>
         <!-- End Slider area -->
-    <br />
+ <div id="arrow-down" >
+     <a href="#arrow-down"> <i class="fa fa-chevron-down"></i></a>
+   
+  </div>
         <br />
         <br />
-    <hr class="accessory">
+    <hr id="second_seccion" class="accessory">
         <br />
         <br />
-    <div class="row">
+    <div class="row" id="info_banner">
         <div class="col-lg-4">
             <div class="row">
                 <div class="col-lg-12 text-center justify-content-center" style="border-bottom:5px double;height:225px;padding: 36px;">
                     <h2 class="letra-cincel" style="color:#0d6767;">CATÁLOGO</h2>
                     <p style="text-align: justify;">Todos nuestros productos cuentan con la mayor calidad del mercado, todo en funcion del cuidado personal de nuestros clientes, siempre es un gusto servirles</p>
                       <br />
-                    <a  class="info-button" href="#" style=" font-family: 'Almendra', sans-serif;">Ver </a>
+                    <a  class="info-button" href="catalogo.aspx" style=" font-family: 'Almendra', sans-serif;">Ver </a>
 
                 </div>
                 <div class="col-lg-12 text-center justify-content-center" style="height:225px;padding: 36px;">

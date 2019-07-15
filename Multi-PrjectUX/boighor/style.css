@@ -3064,8 +3064,9 @@ h3.widget-title-modal {
     width: 44px; }
   .slide .slider__content a.shopbtn:hover {
     color: #e59285; }
-    .slider--15 .slide .slider__content h2 span {
-      color: #ce7852; }
+.slider--15 .slide .slider__content h2 span {
+    color: #00dbc7;
+}
   .slider--15 .slide .slider__content h1 {
     color: #3c3c3c;
     font-family: "tex_gyre_adventorbold";
