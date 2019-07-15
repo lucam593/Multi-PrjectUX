@@ -22,6 +22,7 @@ namespace BL
         public string Video { get; set; }
         public bool EnCarrito { get; set; }
         public int Cantidad { get; set; }
+        public Boolean Promocion { get; set; }
 
         public Productos(int codigoProducto, string nombreProducto, string descripcionProducto,
             int precioProducto, string marca, string categoria, int existencias, string foto1, string foto2, string foto3,
@@ -39,6 +40,7 @@ namespace BL
             Foto3 = foto3;
             Video = video;
             EnCarrito = false;
+            Promocion = false;
             Cantidad = 0;
         }
 
@@ -56,12 +58,14 @@ namespace BL
             Foto2 = foto2;
             Foto3 = foto3;
             EnCarrito = false;
+            Promocion = false;
             Cantidad = 0;
         }
 
         public Productos()
         {
             EnCarrito = false;
+            Promocion = false;
             Cantidad = 0;
         }
 
