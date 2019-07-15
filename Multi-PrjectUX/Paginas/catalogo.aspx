@@ -26,30 +26,31 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-lg-12">
+                        
+                            <h2 class="text-center">Categorías</h2>
+                          
 						<div class="gallery__menu">
-                            <button type="button" data-filter="*" class="is-checked">Filter - All</button>
-                            <button type="button" data-filter=".cat--1">Company News</button>
-                            <button type="button" data-filter=".cat--2">Computers</button>
-                            <button type="button" data-filter=".cat--3">General News</button>
-                            <button type="button" data-filter=".cat--4">Hipster Content</button>
-                            <button type="button" data-filter=".cat--5">Just Food</button>
+                            <button type="button" data-filter="*" class="is-checked">Todo</button>
+                            <button type="button" data-filter=".cremas">Cremas</button>
+                            <button type="button" data-filter=".unas">Uñas</button>
+                            <button type="button" data-filter=".facial">Facial</button>
                       	</div>
 					</div>
 				</div>
 				<div class="row masonry__wrap">
-                    <% int i = 1;
+                    <% 
                         foreach (var item in cargarListaProd())
                         {%>
                     <!-- Start Single Portfolio -->
-					<div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-12 gallery__item cat--<% Response.Write(i.ToString()); i++;%>">
+					<div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-12 gallery__item <% Response.Write(item.Categoria.ToString()); %>">
 						<div class="portfolio">
 							<div class="thumb">
                                 <%Session["productoActual"] = item; %>
-								<a href="portfolio-details.aspx">
+								<a href="product_details.aspx?key=<%Response.Write(item.CodigoProducto.ToString()); %>">
 									<img width="336" height="374" src="<%Response.Write(item.Foto1.ToString());%>" " alt="portfolio images">
 								</a>
 								<div class="link">
-									<a href="portfolio-details.html"><i class="fa fa-eye"></i></a>
+									<a href="product_details.aspx"><i class="fa fa-eye"></i></a>
 								</div>
 							</div>
 							<div class="content">

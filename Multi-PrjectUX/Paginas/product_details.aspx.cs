@@ -19,10 +19,16 @@ namespace Multi_PrjectUX.Paginas
 
             ListaProductos listaProductos = new ListaProductos();
 
-            Session["Productos"] = listaProductos.cargarProductos();
+         
+
+            Productos prd = listaProductos.buscarProd(Request.QueryString["key"].ToString());
+
+         
 
             //Este será el producto que determine los datos que se mostrarán en el formulario.
             productoActual = (Productos)Session["productoActual"];
+
+            productoActual = prd;
 
             //Si el producto es nulo, se mostrarán datos de prueba.
             if (productoActual == null)
@@ -30,7 +36,8 @@ namespace Multi_PrjectUX.Paginas
                 productoActual = new Productos(111, "Producto Prueba", "Esta información es solo para prueba",
                     10000, "Marca 1", "", 1, "images/product/1.jpg", "images / product / 2.jpg", "images / product / 2.jpg");
                
-            }
+            } 
+
         }
 
         protected void Page_Load(object sender, EventArgs e)

@@ -89,7 +89,7 @@
                                         </div>
                                         <div class="product_meta">
                                             <span class="posted_in">Categorías: 
-                                                <a href="#"><%= categoriaActual.NombreCategoria %></a>
+                                                
                                             </span>
                                         </div>
                                     </div>
