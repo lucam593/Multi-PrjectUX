@@ -10,7 +10,6 @@ namespace Multi_PrjectUX.Paginas
 {
     public partial class CatalogoPromociones : System.Web.UI.Page
     {
-        List<Productos> productosPromo;
 
 
         protected void Page_Load(object sender, EventArgs e)
@@ -21,18 +20,18 @@ namespace Multi_PrjectUX.Paginas
         public List<Productos> cargarProductosPromo()
         {
             ListaProductos productos = new ListaProductos();
-            List<Productos> productosCatalogo = productos.cargarProductos();
-            productosPromo = productos.cargarProductos();
 
-            foreach (Productos productPromo in productosCatalogo)
+            List<Productos> pr = new List<Productos>(); 
+
+            foreach (Productos productPromo in productos.cargarProductos())
             {
-                if (productPromo.Promocion == false)
+                if (productPromo.Promocion == true)
                 {
-                    productosPromo.Remove(productPromo);
+                    pr.Add(productPromo);
                 }
             }
 
-            return productosPromo;
+            return pr;
 
         }
     }
