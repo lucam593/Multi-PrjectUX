@@ -23,7 +23,6 @@ namespace Multi_PrjectUX.Paginas
 
             //Este será el producto que determine los datos que se mostrarán en el formulario.
             productoActual = (Productos)Session["productoActual"];
-
             productoActual = prd;
 
             //Si el producto es nulo, se mostrarán datos de prueba.
@@ -52,7 +51,7 @@ namespace Multi_PrjectUX.Paginas
             else
             {
                 productoActual.Cantidad = cantidad;
-                productoActual.EnCarrito = true;
+                ((List<Productos>)Session["ListaCarrito"]).Add(productoActual);
             }
         }
     }
