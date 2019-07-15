@@ -1,0 +1,622 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FC6CEEDB-BD4D-4718-B5A0-04FC72852F15}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UI</RootNamespace>
+    <AssemblyName>UI</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.0.1011, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.0\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.1.2.3\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.1.2.3\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.1.2.3\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.1.2.3\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.1.2.3\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=1.2.3.490, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.1.2.3\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Paginas\HeaderMasterPage.Master" />
+    <Content Include="boighor\fonts\bicon.eot" />
+    <Content Include="boighor\fonts\bicon.ttf" />
+    <Content Include="boighor\fonts\bicon.woff" />
+    <Content Include="boighor\fonts\fontawesome-webfont-1.eot" />
+    <Content Include="boighor\fonts\fontawesome-webfont.eot" />
+    <Content Include="boighor\fonts\fontawesome-webfont.ttf" />
+    <Content Include="boighor\fonts\fontawesome-webfont.woff" />
+    <Content Include="boighor\fonts\fontawesome-webfont.woff2" />
+    <Content Include="boighor\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="boighor\fonts\Simple-Line-Icons.eot" />
+    <Content Include="boighor\fonts\Simple-Line-Icons.ttf" />
+    <Content Include="boighor\fonts\Simple-Line-Icons.woff" />
+    <Content Include="boighor\fonts\Simple-Line-Icons.woff2" />
+    <Content Include="boighor\fonts\slick-1.eot" />
+    <Content Include="boighor\fonts\slick.eot" />
+    <Content Include="boighor\fonts\slick.ttf" />
+    <Content Include="boighor\fonts\slick.woff" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="boighor\about.html" />
+    <Content Include="boighor\blog-details.html" />
+    <Content Include="boighor\blog.html" />
+    <Content Include="boighor\cart.html" />
+    <Content Include="boighor\checkout.html" />
+    <Content Include="boighor\contact.html" />
+    <Content Include="boighor\css\bootstrap.min.css" />
+    <Content Include="boighor\css\custom.css" />
+    <Content Include="boighor\css\plugins.css" />
+    <Content Include="boighor\css\plugins\animation.css" />
+    <Content Include="boighor\css\plugins\bicon.min.css" />
+    <Content Include="boighor\css\plugins\fakeloader.css" />
+    <Content Include="boighor\css\plugins\fancybox.css" />
+    <Content Include="boighor\css\plugins\font-awesome.min.css" />
+    <Content Include="boighor\css\plugins\fotorama.css" />
+    <Content Include="boighor\css\plugins\jquery-ui.min.css" />
+    <Content Include="boighor\css\plugins\lightbox.css" />
+    <Content Include="boighor\css\plugins\mainmenu.css" />
+    <Content Include="boighor\css\plugins\material-design-iconic-font.min.css" />
+    <Content Include="boighor\css\plugins\nivo-preview-2.css" />
+    <Content Include="boighor\css\plugins\nivo-slider.css" />
+    <Content Include="boighor\css\plugins\owl.carousel.min.css" />
+    <Content Include="boighor\css\plugins\owl.theme.default.min.css" />
+    <Content Include="boighor\css\plugins\pe-icon-7-stroke.css" />
+    <Content Include="boighor\css\plugins\simple-line-icons.css" />
+    <Content Include="boighor\css\plugins\slick.min.css" />
+    <Content Include="boighor\error404.html" />
+    <Content Include="boighor\faq.html" />
+    <Content Include="boighor\fonts\bicon.svg" />
+    <Content Include="boighor\fonts\fontawesome-webfont.svg" />
+    <Content Include="boighor\fonts\Simple-Line-Icons.svg" />
+    <Content Include="boighor\fonts\slick.svg" />
+    <Content Include="boighor\images\about\big-img\1.jpg" />
+    <Content Include="boighor\images\about\big-img\2.jpg" />
+    <Content Include="boighor\images\about\team\1.jpg" />
+    <Content Include="boighor\images\about\team\2.jpg" />
+    <Content Include="boighor\images\about\team\3.jpg" />
+    <Content Include="boighor\images\about\team\4.jpg" />
+    <Content Include="boighor\images\about\team\5.jpg" />
+    <Content Include="boighor\images\about\team\6.jpg" />
+    <Content Include="boighor\images\ajax-loader.gif" />
+    <Content Include="boighor\images\best-sell-product\1.jpg" />
+    <Content Include="boighor\images\best-sell-product\2.jpg" />
+    <Content Include="boighor\images\best-sell-product\3.jpg" />
+    <Content Include="boighor\images\best-sell-product\4.jpg" />
+    <Content Include="boighor\images\best-sell-product\5.jpg" />
+    <Content Include="boighor\images\best-sell-product\6.jpg" />
+    <Content Include="boighor\images\best-sell-product\7.jpg" />
+    <Content Include="boighor\images\best-sell-product\8.jpg" />
+    <Content Include="boighor\images\bg\1.jpg" />
+    <Content Include="boighor\images\bg\2.jpg" />
+    <Content Include="boighor\images\bg\3.jpg" />
+    <Content Include="boighor\images\bg\4.jpg" />
+    <Content Include="boighor\images\bg\5.jpg" />
+    <Content Include="boighor\images\bg\6.jpg" />
+    <Content Include="boighor\images\bg\7.jpg" />
+    <Content Include="boighor\images\bg\8.jpg" />
+    <Content Include="boighor\images\bg\9.jpg" />
+    <Content Include="boighor\images\blog\big-img\1.jpg" />
+    <Content Include="boighor\images\blog\blog-3\1.jpg" />
+    <Content Include="boighor\images\blog\blog-3\2.jpg" />
+    <Content Include="boighor\images\blog\blog-3\3.jpg" />
+    <Content Include="boighor\images\blog\blog-3\4.jpg" />
+    <Content Include="boighor\images\blog\blog-3\5.jpg" />
+    <Content Include="boighor\images\blog\comment\1.jpeg" />
+    <Content Include="boighor\images\blog\sm-img\1.jpg" />
+    <Content Include="boighor\images\blog\sm-img\2.jpg" />
+    <Content Include="boighor\images\blog\sm-img\3.jpg" />
+    <Content Include="boighor\images\blog\sm-img\4.jpg" />
+    <Content Include="boighor\images\blog\sm-img\5.jpg" />
+    <Content Include="boighor\images\books\1.jpg" />
+    <Content Include="boighor\images\books\10.jpg" />
+    <Content Include="boighor\images\books\11.jpg" />
+    <Content Include="boighor\images\books\12.jpg" />
+    <Content Include="boighor\images\books\2.jpg" />
+    <Content Include="boighor\images\books\3.jpg" />
+    <Content Include="boighor\images\books\4.jpg" />
+    <Content Include="boighor\images\books\5.jpg" />
+    <Content Include="boighor\images\books\6.jpg" />
+    <Content Include="boighor\images\books\7.jpg" />
+    <Content Include="boighor\images\books\8.jpg" />
+    <Content Include="boighor\images\books\9.jpg" />
+    <Content Include="boighor\images\brand\1.png" />
+    <Content Include="boighor\images\brand\2.png" />
+    <Content Include="boighor\images\brand\3.png" />
+    <Content Include="boighor\images\brand\4.png" />
+    <Content Include="boighor\images\brand\5.png" />
+    <Content Include="boighor\images\brand\6.png" />
+    <Content Include="boighor\images\brand\7.png" />
+    <Content Include="boighor\images\fancybox\blank.gif" />
+    <Content Include="boighor\images\fancybox\fancybox_loading%402x.gif" />
+    <Content Include="boighor\images\fancybox\fancybox_loading.gif" />
+    <Content Include="boighor\images\fancybox\fancybox_overlay.png" />
+    <Content Include="boighor\images\fancybox\fancybox_sprite%402x.png" />
+    <Content Include="boighor\images\fancybox\fancybox_sprite.png" />
+    <Content Include="boighor\images\favicon.ico" />
+    <Content Include="boighor\images\icon.png" />
+    <Content Include="boighor\images\icons\blog-link-post2.png" />
+    <Content Include="boighor\images\icons\box.png" />
+    <Content Include="boighor\images\icons\button-compare.png" />
+    <Content Include="boighor\images\icons\button-email.png" />
+    <Content Include="boighor\images\icons\button-wishlist.png" />
+    <Content Include="boighor\images\icons\button-wishlist_white.png" />
+    <Content Include="boighor\images\icons\cart.png" />
+    <Content Include="boighor\images\icons\cart1.png" />
+    <Content Include="boighor\images\icons\cart2.png" />
+    <Content Include="boighor\images\icons\cart3.png" />
+    <Content Include="boighor\images\icons\cart4.png" />
+    <Content Include="boighor\images\icons\cart_white.png" />
+    <Content Include="boighor\images\icons\close.png" />
+    <Content Include="boighor\images\icons\compare.png" />
+    <Content Include="boighor\images\icons\compare2.png" />
+    <Content Include="boighor\images\icons\em.png" />
+    <Content Include="boighor\images\icons\em2.png" />
+    <Content Include="boighor\images\icons\fotorama%402x.png" />
+    <Content Include="boighor\images\icons\fotorama.png" />
+    <Content Include="boighor\images\icons\icon_account.png" />
+    <Content Include="boighor\images\icons\icon_account2.png" />
+    <Content Include="boighor\images\icons\icon_cart2.png" />
+    <Content Include="boighor\images\icons\icon_cart3.png" />
+    <Content Include="boighor\images\icons\icon_search2.png" />
+    <Content Include="boighor\images\icons\icon_search3.png" />
+    <Content Include="boighor\images\icons\icon_setting.png" />
+    <Content Include="boighor\images\icons\icon_setting_white.png" />
+    <Content Include="boighor\images\icons\icon_title.png" />
+    <Content Include="boighor\images\icons\icon_title2.png" />
+    <Content Include="boighor\images\icons\icon_title3.png" />
+    <Content Include="boighor\images\icons\lc.png" />
+    <Content Include="boighor\images\icons\lc2.png" />
+    <Content Include="boighor\images\icons\line_title.png" />
+    <Content Include="boighor\images\icons\links_static.png" />
+    <Content Include="boighor\images\icons\links_static2.png" />
+    <Content Include="boighor\images\icons\links_static3.png" />
+    <Content Include="boighor\images\icons\links_static4.png" />
+    <Content Include="boighor\images\icons\links_static5.png" />
+    <Content Include="boighor\images\icons\links_static6.png" />
+    <Content Include="boighor\images\icons\links_static7.png" />
+    <Content Include="boighor\images\icons\links_static8.png" />
+    <Content Include="boighor\images\icons\loading.gif" />
+    <Content Include="boighor\images\icons\nav_icon.png" />
+    <Content Include="boighor\images\icons\next.png" />
+    <Content Include="boighor\images\icons\payment.png" />
+    <Content Include="boighor\images\icons\ph.png" />
+    <Content Include="boighor\images\icons\ph2.png" />
+    <Content Include="boighor\images\icons\plus.png" />
+    <Content Include="boighor\images\icons\prev.png" />
+    <Content Include="boighor\images\icons\product-info.png" />
+    <Content Include="boighor\images\icons\search.png" />
+    <Content Include="boighor\images\icons\search1.png" />
+    <Content Include="boighor\images\icons\search2.png" />
+    <Content Include="boighor\images\icons\search_white.png" />
+    <Content Include="boighor\images\icons\wishlist.png" />
+    <Content Include="boighor\images\icons\wishlist2.png" />
+    <Content Include="boighor\images\logo\3.png" />
+    <Content Include="boighor\images\logo\logo.png" />
+    <Content Include="boighor\images\others\404.png" />
+    <Content Include="boighor\images\others\banner_left.jpg" />
+    <Content Include="boighor\images\others\toggle_close.png" />
+    <Content Include="boighor\images\others\toggle_open.png" />
+    <Content Include="boighor\images\png-img\headphone.png" />
+    <Content Include="boighor\images\png-img\payment.png" />
+    <Content Include="boighor\images\png-img\shipping.png" />
+    <Content Include="boighor\images\portfolio\big-2\1.jpg" />
+    <Content Include="boighor\images\portfolio\big-2\2.jpg" />
+    <Content Include="boighor\images\portfolio\big-2\3.jpg" />
+    <Content Include="boighor\images\portfolio\big-img\1.jpg" />
+    <Content Include="boighor\images\portfolio\md-img\1.jpg" />
+    <Content Include="boighor\images\portfolio\md-img\10.jpg" />
+    <Content Include="boighor\images\portfolio\md-img\2.jpg" />
+    <Content Include="boighor\images\portfolio\md-img\3.jpg" />
+    <Content Include="boighor\images\portfolio\md-img\4.jpg" />
+    <Content Include="boighor\images\portfolio\md-img\5.jpg" />
+    <Content Include="boighor\images\portfolio\md-img\6.jpg" />
+    <Content Include="boighor\images\portfolio\md-img\7.jpg" />
+    <Content Include="boighor\images\portfolio\md-img\8.jpg" />
+    <Content Include="boighor\images\portfolio\md-img\9.jpg" />
+    <Content Include="boighor\images\pos-bg\3.jpeg" />
+    <Content Include="boighor\images\product\1.jpg" />
+    <Content Include="boighor\images\product\10.jpg" />
+    <Content Include="boighor\images\product\11.jpg" />
+    <Content Include="boighor\images\product\12.jpg" />
+    <Content Include="boighor\images\product\2.jpg" />
+    <Content Include="boighor\images\product\3.jpg" />
+    <Content Include="boighor\images\product\4.jpg" />
+    <Content Include="boighor\images\product\5.jpg" />
+    <Content Include="boighor\images\product\6.jpg" />
+    <Content Include="boighor\images\product\7.jpg" />
+    <Content Include="boighor\images\product\8.jpg" />
+    <Content Include="boighor\images\product\9.jpg" />
+    <Content Include="boighor\images\product\big-img\1.jpg" />
+    <Content Include="boighor\images\product\sm-3\1.jpg" />
+    <Content Include="boighor\images\product\sm-3\2.jpg" />
+    <Content Include="boighor\images\product\sm-3\3.jpg" />
+    <Content Include="boighor\images\product\sm-img\1.jpg" />
+    <Content Include="boighor\images\product\sm-img\2.jpg" />
+    <Content Include="boighor\images\product\sm-img\3.jpg" />
+    <Content Include="boighor\images\testimonial\1.png" />
+    <Content Include="boighor\images\testimonial\2.png" />
+    <Content Include="boighor\images\testimonial\3.png" />
+    <Content Include="boighor\index.html" />
+    <Content Include="boighor\js\active.js" />
+    <Content Include="boighor\js\bootstrap.min.js" />
+    <Content Include="boighor\js\plugins.js" />
+    <Content Include="boighor\js\popper.min.js" />
+    <Content Include="boighor\js\vendor\jquery-3.2.1.min.js" />
+    <Content Include="boighor\js\vendor\modernizr-3.5.0.min.js" />
+    <Content Include="boighor\my-account.html" />
+    <Content Include="boighor\portfolio-details.html" />
+    <Content Include="boighor\portfolio.html" />
+    <Content Include="boighor\shop-grid.html" />
+    <Content Include="boighor\single-product.html" />
+    <Content Include="boighor\style.css" />
+    <Content Include="boighor\team.html" />
+    <Content Include="boighor\wishlist.html" />
+    <Content Include="Paginas\about.aspx" />
+    <Content Include="Paginas\css\bootstrap.min.css" />
+    <Content Include="Paginas\css\custom.css" />
+    <Content Include="Paginas\css\plugins.css" />
+    <Content Include="Paginas\css\plugins\animation.css" />
+    <Content Include="Paginas\css\plugins\bicon.min.css" />
+    <Content Include="Paginas\css\plugins\fakeloader.css" />
+    <Content Include="Paginas\css\plugins\fancybox.css" />
+    <Content Include="Paginas\css\plugins\font-awesome.min.css" />
+    <Content Include="Paginas\css\plugins\fotorama.css" />
+    <Content Include="Paginas\css\plugins\jquery-ui.min.css" />
+    <Content Include="Paginas\css\plugins\lightbox.css" />
+    <Content Include="Paginas\css\plugins\mainmenu.css" />
+    <Content Include="Paginas\css\plugins\material-design-iconic-font.min.css" />
+    <Content Include="Paginas\css\plugins\nivo-preview-2.css" />
+    <Content Include="Paginas\css\plugins\nivo-slider.css" />
+    <Content Include="Paginas\css\plugins\owl.carousel.min.css" />
+    <Content Include="Paginas\css\plugins\owl.theme.default.min.css" />
+    <Content Include="Paginas\css\plugins\pe-icon-7-stroke.css" />
+    <Content Include="Paginas\css\plugins\simple-line-icons.css" />
+    <Content Include="Paginas\css\plugins\slick.min.css" />
+    <Content Include="Paginas\images\about\big-img\1.jpg" />
+    <Content Include="Paginas\images\about\big-img\2.jpg" />
+    <Content Include="Paginas\images\about\team\1.jpg" />
+    <Content Include="Paginas\images\about\team\2.jpg" />
+    <Content Include="Paginas\images\about\team\3.jpg" />
+    <Content Include="Paginas\images\about\team\4.jpg" />
+    <Content Include="Paginas\images\about\team\5.jpg" />
+    <Content Include="Paginas\images\about\team\6.jpg" />
+    <Content Include="Paginas\images\ajax-loader.gif" />
+    <Content Include="Paginas\images\best-sell-product\1.jpg" />
+    <Content Include="Paginas\images\best-sell-product\2.jpg" />
+    <Content Include="Paginas\images\best-sell-product\3.jpg" />
+    <Content Include="Paginas\images\best-sell-product\4.jpg" />
+    <Content Include="Paginas\images\best-sell-product\5.jpg" />
+    <Content Include="Paginas\images\best-sell-product\6.jpg" />
+    <Content Include="Paginas\images\best-sell-product\7.jpg" />
+    <Content Include="Paginas\images\best-sell-product\8.jpg" />
+    <Content Include="Paginas\images\bg\1.jpg" />
+    <Content Include="Paginas\images\bg\2.jpg" />
+    <Content Include="Paginas\images\bg\3.jpg" />
+    <Content Include="Paginas\images\bg\3_old.jpg" />
+    <Content Include="Paginas\images\bg\4.jpg" />
+    <Content Include="Paginas\images\bg\4_old.jpg" />
+    <Content Include="Paginas\images\bg\5.jpg" />
+    <Content Include="Paginas\images\bg\6.jpg" />
+    <Content Include="Paginas\images\bg\7.jpg" />
+    <Content Include="Paginas\images\bg\8.jpg" />
+    <Content Include="Paginas\images\bg\9.jpg" />
+    <Content Include="Paginas\images\blog\big-img\1.jpg" />
+    <Content Include="Paginas\images\blog\blog-3\1.jpg" />
+    <Content Include="Paginas\images\blog\blog-3\2.jpg" />
+    <Content Include="Paginas\images\blog\blog-3\3.jpg" />
+    <Content Include="Paginas\images\blog\blog-3\4.jpg" />
+    <Content Include="Paginas\images\blog\blog-3\5.jpg" />
+    <Content Include="Paginas\images\blog\comment\1.jpeg" />
+    <Content Include="Paginas\images\blog\sm-img\1.jpg" />
+    <Content Include="Paginas\images\blog\sm-img\2.jpg" />
+    <Content Include="Paginas\images\blog\sm-img\3.jpg" />
+    <Content Include="Paginas\images\blog\sm-img\4.jpg" />
+    <Content Include="Paginas\images\blog\sm-img\5.jpg" />
+    <Content Include="Paginas\images\books\1.jpg" />
+    <Content Include="Paginas\images\books\10.jpg" />
+    <Content Include="Paginas\images\books\11.jpg" />
+    <Content Include="Paginas\images\books\12.jpg" />
+    <Content Include="Paginas\images\books\2.jpg" />
+    <Content Include="Paginas\images\books\3.jpg" />
+    <Content Include="Paginas\images\books\4.jpg" />
+    <Content Include="Paginas\images\books\5.jpg" />
+    <Content Include="Paginas\images\books\6.jpg" />
+    <Content Include="Paginas\images\books\7.jpg" />
+    <Content Include="Paginas\images\books\8.jpg" />
+    <Content Include="Paginas\images\books\9.jpg" />
+    <Content Include="Paginas\images\brand\1.png" />
+    <Content Include="Paginas\images\brand\2.png" />
+    <Content Include="Paginas\images\brand\3.png" />
+    <Content Include="Paginas\images\brand\4.png" />
+    <Content Include="Paginas\images\brand\5.png" />
+    <Content Include="Paginas\images\brand\6.png" />
+    <Content Include="Paginas\images\brand\7.png" />
+    <Content Include="Paginas\images\fancybox\blank.gif" />
+    <Content Include="Paginas\images\fancybox\fancybox_loading%402x.gif" />
+    <Content Include="Paginas\images\fancybox\fancybox_loading.gif" />
+    <Content Include="Paginas\images\fancybox\fancybox_overlay.png" />
+    <Content Include="Paginas\images\fancybox\fancybox_sprite%402x.png" />
+    <Content Include="Paginas\images\fancybox\fancybox_sprite.png" />
+    <Content Include="Paginas\images\favicon.ico" />
+    <Content Include="Paginas\images\favicon.png" />
+    <Content Include="Paginas\images\icon.png" />
+    <Content Include="Paginas\images\icons\blog-link-post2.png" />
+    <Content Include="Paginas\images\icons\box.png" />
+    <Content Include="Paginas\images\icons\button-compare.png" />
+    <Content Include="Paginas\images\icons\button-email.png" />
+    <Content Include="Paginas\images\icons\button-wishlist.png" />
+    <Content Include="Paginas\images\icons\button-wishlist_white.png" />
+    <Content Include="Paginas\images\icons\cart.png" />
+    <Content Include="Paginas\images\icons\cart1.png" />
+    <Content Include="Paginas\images\icons\cart2.png" />
+    <Content Include="Paginas\images\icons\cart3.png" />
+    <Content Include="Paginas\images\icons\cart4.png" />
+    <Content Include="Paginas\images\icons\cart_white.png" />
+    <Content Include="Paginas\images\icons\close.png" />
+    <Content Include="Paginas\images\icons\compare.png" />
+    <Content Include="Paginas\images\icons\compare2.png" />
+    <Content Include="Paginas\images\icons\em.png" />
+    <Content Include="Paginas\images\icons\em2.png" />
+    <Content Include="Paginas\images\icons\fotorama%402x.png" />
+    <Content Include="Paginas\images\icons\fotorama.png" />
+    <Content Include="Paginas\images\icons\icon_account.png" />
+    <Content Include="Paginas\images\icons\icon_account2.png" />
+    <Content Include="Paginas\images\icons\icon_cart2.png" />
+    <Content Include="Paginas\images\icons\icon_cart3.png" />
+    <Content Include="Paginas\images\icons\icon_search2.png" />
+    <Content Include="Paginas\images\icons\icon_search3.png" />
+    <Content Include="Paginas\images\icons\icon_setting.png" />
+    <Content Include="Paginas\images\icons\icon_setting_white.png" />
+    <Content Include="Paginas\images\icons\icon_title.png" />
+    <Content Include="Paginas\images\icons\icon_title2.png" />
+    <Content Include="Paginas\images\icons\icon_title3.png" />
+    <Content Include="Paginas\images\icons\lc.png" />
+    <Content Include="Paginas\images\icons\lc2.png" />
+    <Content Include="Paginas\images\icons\line_title.png" />
+    <Content Include="Paginas\images\icons\links_static.png" />
+    <Content Include="Paginas\images\icons\links_static2.png" />
+    <Content Include="Paginas\images\icons\links_static3.png" />
+    <Content Include="Paginas\images\icons\links_static4.png" />
+    <Content Include="Paginas\images\icons\links_static5.png" />
+    <Content Include="Paginas\images\icons\links_static6.png" />
+    <Content Include="Paginas\images\icons\links_static7.png" />
+    <Content Include="Paginas\images\icons\links_static8.png" />
+    <Content Include="Paginas\images\icons\loading.gif" />
+    <Content Include="Paginas\images\icons\nav_icon.png" />
+    <Content Include="Paginas\images\icons\next.png" />
+    <Content Include="Paginas\images\icons\payment.png" />
+    <Content Include="Paginas\images\icons\ph.png" />
+    <Content Include="Paginas\images\icons\ph2.png" />
+    <Content Include="Paginas\images\icons\plus.png" />
+    <Content Include="Paginas\images\icons\prev.png" />
+    <Content Include="Paginas\images\icons\product-info.png" />
+    <Content Include="Paginas\images\icons\search.png" />
+    <Content Include="Paginas\images\icons\search1.png" />
+    <Content Include="Paginas\images\icons\search2.png" />
+    <Content Include="Paginas\images\icons\search_white.png" />
+    <Content Include="Paginas\images\icons\wishlist.png" />
+    <Content Include="Paginas\images\icons\wishlist2.png" />
+    <Content Include="Paginas\images\lenguaje_signos.png" />
+    <Content Include="Paginas\images\logo\3.png" />
+    <Content Include="Paginas\images\logo\logo.png" />
+    <Content Include="Paginas\images\others\404.png" />
+    <Content Include="Paginas\images\others\banner_left.jpg" />
+    <Content Include="Paginas\images\others\toggle_close.png" />
+    <Content Include="Paginas\images\others\toggle_open.png" />
+    <Content Include="Paginas\images\png-img\headphone.png" />
+    <Content Include="Paginas\images\png-img\payment.png" />
+    <Content Include="Paginas\images\png-img\shipping.png" />
+    <Content Include="Paginas\images\portfolio\big-2\1.jpg" />
+    <Content Include="Paginas\images\portfolio\big-2\2.jpg" />
+    <Content Include="Paginas\images\portfolio\big-2\3.jpg" />
+    <Content Include="Paginas\images\portfolio\big-img\1.jpg" />
+    <Content Include="Paginas\images\portfolio\md-img\1.jpg" />
+    <Content Include="Paginas\images\portfolio\md-img\10.jpg" />
+    <Content Include="Paginas\images\portfolio\md-img\2.jpg" />
+    <Content Include="Paginas\images\portfolio\md-img\3.jpg" />
+    <Content Include="Paginas\images\portfolio\md-img\4.jpg" />
+    <Content Include="Paginas\images\portfolio\md-img\5.jpg" />
+    <Content Include="Paginas\images\portfolio\md-img\6.jpg" />
+    <Content Include="Paginas\images\portfolio\md-img\7.jpg" />
+    <Content Include="Paginas\images\portfolio\md-img\8.jpg" />
+    <Content Include="Paginas\images\portfolio\md-img\9.jpg" />
+    <Content Include="Paginas\images\pos-bg\3.jpeg" />
+    <Content Include="Paginas\images\product\1.jpg" />
+    <Content Include="Paginas\images\product\10.jpg" />
+    <Content Include="Paginas\images\product\11.jpg" />
+    <Content Include="Paginas\images\product\12.jpg" />
+    <Content Include="Paginas\images\product\2.jpg" />
+    <Content Include="Paginas\images\product\3.jpg" />
+    <Content Include="Paginas\images\product\4.jpg" />
+    <Content Include="Paginas\images\product\5.jpg" />
+    <Content Include="Paginas\images\product\6.jpg" />
+    <Content Include="Paginas\images\product\7.jpg" />
+    <Content Include="Paginas\images\product\8.jpg" />
+    <Content Include="Paginas\images\product\9.jpg" />
+    <Content Include="Paginas\images\product\big-img\1.jpg" />
+    <Content Include="Paginas\images\product\sm-3\1.jpg" />
+    <Content Include="Paginas\images\product\sm-3\2.jpg" />
+    <Content Include="Paginas\images\product\sm-3\3.jpg" />
+    <Content Include="Paginas\images\product\sm-img\1.jpg" />
+    <Content Include="Paginas\images\product\sm-img\2.jpg" />
+    <Content Include="Paginas\images\product\sm-img\3.jpg" />
+    <Content Include="Paginas\images\testimonial\1.png" />
+    <Content Include="Paginas\images\testimonial\2.png" />
+    <Content Include="Paginas\images\testimonial\3.png" />
+    <Content Include="Paginas\index_page.aspx" />
+    <Content Include="Paginas\js\active.js" />
+    <Content Include="Paginas\js\bootstrap.min.js" />
+    <Content Include="Paginas\js\plugins.js" />
+    <Content Include="Paginas\js\popper.min.js" />
+    <Content Include="Paginas\js\vendor\jquery-3.2.1.min.js" />
+    <Content Include="Paginas\js\vendor\modernizr-3.5.0.min.js" />
+    <Content Include="Paginas\productos\Producto 1 Mia Secret\Mia_Secret_F1.png" />
+    <Content Include="Paginas\productos\Producto 1 Mia Secret\Mia_Secret_F2.png" />
+    <Content Include="Paginas\productos\Producto 1 Mia Secret\Mia_Secret_F3.jpg" />
+    <Content Include="Paginas\productos\Producto 1 Mia Secret\Mia_Secret_Video.mp4" />
+    <Content Include="Paginas\productos\Producto 2 Environmental Remover Pack\Environmental_Remover_Pack_Video.mp4" />
+    <Content Include="Paginas\productos\Producto 2 Environmental Remover Pack\Env_Rem_Pack_F1.png" />
+    <Content Include="Paginas\productos\Producto 2 Environmental Remover Pack\Env_Rem_Pack_F2.png" />
+    <Content Include="Paginas\productos\Producto 2 Environmental Remover Pack\Env_Rem_Pack_F3.png" />
+    <Content Include="Paginas\productos\Producto 2 Environmental Remover Pack\Env_Rem_Pack_F4.jpg" />
+    <Content Include="Paginas\productos\Producto 3 Arobel Base Fortalecedora\Arobel_Base_Fortalecedora_F1.png" />
+    <Content Include="Paginas\productos\Producto 3 Arobel Base Fortalecedora\Arobel_Base_Fortalecedora_F2.jpg" />
+    <Content Include="Paginas\product_details.aspx" />
+    <Content Include="Paginas\style.css" />
+    <Content Include="scripts\ai.0.15.0-build58334.js" />
+    <Content Include="scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Paginas\about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\HeaderMasterPage.Master.cs">
+      <DependentUpon>HeaderMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\index_page.aspx.cs">
+      <DependentUpon>index_page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\product_details.aspx.cs">
+      <DependentUpon>product_details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BL\BL.csproj">
+      <Project>{97a4bf45-0b5e-4eb5-8864-768687bd552e}</Project>
+      <Name>BL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2706</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2706/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

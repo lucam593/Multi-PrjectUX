@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{25CAA8EA-51A1-40F6-83A7-847AB6EF2258}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
-    <OutputType>Library</OutputType>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Multi_PrjectUX</RootNamespace>
     <AssemblyName>Multi-PrjectUX</AssemblyName>
@@ -279,6 +279,7 @@
     <Content Include="boighor\shop-grid.html" />
     <Content Include="boighor\single-product.html" />
     <Content Include="boighor\style.css" />
+    <Content Include="Paginas\index_page.aspx" />
     <Content Include="Paginas\css\bootstrap.min.css" />
     <Content Include="Paginas\css\custom.css" />
     <Content Include="Paginas\css\plugins.css" />
@@ -308,6 +309,7 @@
     <Content Include="Paginas\images\about\team\5.jpg" />
     <Content Include="Paginas\images\about\team\6.jpg" />
     <Content Include="Paginas\images\ajax-loader.gif" />
+    <Content Include="Paginas\images\lenguaje_signos.png" />
     <Content Include="Paginas\images\best-sell-product\1.jpg" />
     <Content Include="Paginas\images\best-sell-product\2.jpg" />
     <Content Include="Paginas\images\best-sell-product\3.jpg" />
@@ -476,6 +478,17 @@
     <Content Include="Paginas\js\popper.min.js" />
     <Content Include="Paginas\js\vendor\jquery-3.2.1.min.js" />
     <Content Include="Paginas\js\vendor\modernizr-3.5.0.min.js" />
+    <Content Include="Paginas\productos\Producto 1 Mia Secret\Mia_Secret_F1.png" />
+    <Content Include="Paginas\productos\Producto 1 Mia Secret\Mia_Secret_F2.png" />
+    <Content Include="Paginas\productos\Producto 1 Mia Secret\Mia_Secret_F3.jpg" />
+    <Content Include="Paginas\productos\Producto 1 Mia Secret\Mia_Secret_Video.mp4" />
+    <Content Include="Paginas\productos\Producto 2 Environmental Remover Pack\Environmental_Remover_Pack_Video.mp4" />
+    <Content Include="Paginas\productos\Producto 2 Environmental Remover Pack\Env_Rem_Pack_F1.png" />
+    <Content Include="Paginas\productos\Producto 2 Environmental Remover Pack\Env_Rem_Pack_F2.png" />
+    <Content Include="Paginas\productos\Producto 2 Environmental Remover Pack\Env_Rem_Pack_F3.png" />
+    <Content Include="Paginas\productos\Producto 2 Environmental Remover Pack\Env_Rem_Pack_F4.jpg" />
+    <Content Include="Paginas\productos\Producto 3 Arobel Base Fortalecedora\Arobel_Base_Fortalecedora_F1.png" />
+    <Content Include="Paginas\productos\Producto 3 Arobel Base Fortalecedora\Arobel_Base_Fortalecedora_F2.jpg" />
     <Content Include="Paginas\product_details.aspx" />
     <Content Include="boighor\team.html" />
     <Content Include="boighor\wishlist.html" />
@@ -484,6 +497,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Paginas\index_page.aspx.cs">
+      <DependentUpon>index_page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\index_page.aspx.designer.cs">
+      <DependentUpon>index_page.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Paginas\HeaderMasterPage.Master.cs">
       <DependentUpon>HeaderMasterPage.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -534,6 +554,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\BL\BL.csproj">
       <Project>{97a4bf45-0b5e-4eb5-8864-768687bd552e}</Project>
@@ -544,6 +565,9 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
@@ -551,16 +575,19 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>60606</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:60606/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
-          <UseCustomServer>False</UseCustomServer>
+          <UseCustomServer>True</UseCustomServer>
           <CustomServerUrl>
           </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <servers defaultServer="SelfHostServer">
+            <server name="SelfHostServer" exePath="" cmdArgs="" url="http://localhost:60606/" workingDir="" />
+          </servers>
         </WebProjectProperties>
       </FlavorProperties>
     </VisualStudio>
