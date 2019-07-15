@@ -861,12 +861,14 @@ a {
     background-size: cover;
     background-position: center center;
 }
+
 .bg-image--prodhome {
     background-image: url(productos/Otros_productos/facial.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
+
 .bg-image--citashome {
     background-image: url(productos/Otros_productos/citas.jpg);
     background-repeat: no-repeat;
@@ -8726,6 +8728,81 @@ a.checkout__title {
     top: 51%;
 }
 
+hr {
+    border: 0;
+    margin: 1.35em auto;
+    max-width: 100%;
+    background-position: 50%;
+    box-sizing: border-box;
+}
+
+.accessory {
+    height: 6px;
+    background-image: radial-gradient( closest-side, hsla(0, 0%, 50%, 1.0), hsla(0, 0%, 50%, 0) 100%);
+    position: relative;
+}
+
+    .accessory:after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        background-color: hsl(0, 0%, 75%);
+        height: 12px;
+        width: 12px;
+        transform: rotate(45deg);
+        margin-top: -10px;
+        margin-left: -10px;
+        border-radius: 4px 0;
+        border: 4px solid hsla(0, 0%, 100%, 0.35);
+        background-clip: padding-box;
+        box-shadow: -10px 10px 0 hsla(0, 0%, 100%, 0.15), 10px -10px 0 hsla(0, 0%, 100%, 0.15);
+    }
+
+.info-button {
+    background: #1AAB8A;
+    color: #fff;
+    border: none;
+    position: relative;
+    height: 60px;
+    font-size: 1.6em;
+    padding: 0 2em;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+}
+
+    .info-button:hover {
+        background: #fff;
+        color: #1AAB8A;
+    }
+
+    .info-button:before, .info-button:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 2px;
+        width: 0;
+        background: #1AAB8A;
+        transition: 400ms ease all;
+    }
+
+    .info-button:after {
+        right: inherit;
+        top: inherit;
+        left: 0;
+        bottom: 0;
+    }
+
+    .info-button:hover:before, .info-button:hover:after {
+        width: 100%;
+        transition: 800ms ease all;
+    }
+
+
+
+
 .info-banner {
     background-image: url(productos/Otros_productos/slide6.jpg);
     background-attachment: fixed;
@@ -8739,7 +8816,6 @@ a.checkout__title {
     text-align: justify;
     color: white;
     padding-left: 40px;
-    
 }
 
 .letra-cincel {

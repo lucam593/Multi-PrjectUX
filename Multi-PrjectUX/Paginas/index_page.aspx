@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Paginas/HeaderMasterPage.Master" AutoEventWireup="true" CodeBehind="index_page.aspx.cs" Inherits="Multi_PrjectUX.index_page" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="//fonts.googleapis.com/css?family=Cinzel Decorative&subset=latin" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Almendra&subset=latin" rel="stylesheet" type="text/css">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <!-- Start Slider area -->
@@ -43,19 +44,27 @@
             <!-- End Single Slide -->
         </div>
         <!-- End Slider area -->
-
+    <br />
+        <br />
+        <br />
+    <hr class="accessory">
+        <br />
+        <br />
     <div class="row">
         <div class="col-lg-4">
             <div class="row">
-                <div class="col-lg-12" style="border-bottom:5px double;height:225px">
-                    <h2>Catalogo</h2>
-                    <p>Todos nuestros productos cuentan con la mayor calidad del mercado, todo en funcion del cuidado personal de nuestros clientes, siempre es un gusto servirles</p>
-
+                <div class="col-lg-12 text-center justify-content-center" style="border-bottom:5px double;height:225px;padding: 36px;">
+                    <h2 class="letra-cincel" style="color:#0d6767;">CATÁLOGO</h2>
+                    <p style="text-align: justify;">Todos nuestros productos cuentan con la mayor calidad del mercado, todo en funcion del cuidado personal de nuestros clientes, siempre es un gusto servirles</p>
+                      <br />
+                    <a  class="info-button" href="#" style=" font-family: 'Almendra', sans-serif;">Ver </a>
 
                 </div>
-                <div class="col-lg-12">
-                    <h2>Citas</h2>
-
+                <div class="col-lg-12 text-center justify-content-center" style="height:225px;padding: 36px;">
+                    <h2 class="letra-cincel" style="color:#0d6767;">CITAS</h2>
+                    <p style="text-align: justify;">Como sabemos que es dificil encontrar un Salón abierto cuando lo necesitas, te ofrecemos la posibilidad de agendar con nosotros ¡En el momento que lo necesites!</p>
+                     <br />
+                    <a class="info-button" href="#" style=" font-family: 'Almendra', sans-serif;">Agendar</a>
 
 
                 </div>
@@ -66,4 +75,10 @@
     
   </div>
 </div>
+      <br />
+        <br />
+    <hr class="accessory">
+        <br />
+        <br />
+
 </asp:Content>

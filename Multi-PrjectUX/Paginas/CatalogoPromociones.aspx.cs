@@ -20,13 +20,14 @@ namespace Multi_PrjectUX.Paginas
         public List<Productos> cargarProductosPromo()
         {
             ListaProductos productos = new ListaProductos();
-            productosPromo = productos.cargarProductos();
+            productosPromo = new List<Productos>();
+            
 
-            foreach (Productos productPromo in productosPromo)
+            foreach (Productos productPromo in productos.cargarProductos())
             {
-                if (productPromo.Promocion == false)
+                if (productPromo.Promocion == true)
                 {
-                    productosPromo.Remove(productPromo);
+                    productosPromo.Add(productPromo);
                 }
             }
 

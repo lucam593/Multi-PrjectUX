@@ -62,28 +62,28 @@ namespace BL
             Productos productPromo1 = new Productos(12, "Rapid Wrinkle Repair", "Crema regeneradora y reparación de arrugas.", 100, "Neutrogena", "cremas", 30,
                 "productos\\Otros_productos\\25.jpg",
                 "productos\\Otros_productos\\26.jpg",
-                "productos\\Otros_productos\\27.jpg");
+                "productos\\Otros_productos\\27.jpg", true);
 
             productos.Add(productPromo1);
 
             Productos productPromo2 = new Productos(13, "Hialuronic Acid", "Crema Facial Hidratante con Ácido Hialurónico para piel seca.", 100, "Progenix", "cremas", 30,
                 "productos\\Otros_productos\\28.jpg",
                 "productos\\Otros_productos\\29.jpg",
-                "productos\\Otros_productos\\30.jpg");
+                "productos\\Otros_productos\\30.jpg", true);
 
             productos.Add(productPromo2);
 
             Productos productPromo3 = new Productos(14, "Set de Manicura", "manicura profesional portátil 11 en 1.", 100, "Ophanie", "unas", 30,
                 "productos\\Otros_productos\\31.jpg",
                 "productos\\Otros_productos\\32.jpg",
-                "productos\\Otros_productos\\33.jpg");
+                "productos\\Otros_productos\\33.jpg", true);
 
             productos.Add(productPromo3);
 
             Productos productPromo4 = new Productos(15, "Set de limas para uñas", "Kit de herramientas de manicura profesional para limas de uñas.", 100, "TSMADDTS", "unas", 30,
                "productos\\Otros_productos\\34.jpg",
                "productos\\Otros_productos\\35.jpg",
-               "productos\\Otros_productos\\36.jpg");
+               "productos\\Otros_productos\\36.jpg", true);
 
             productos.Add(productPromo4);
 
