@@ -47,11 +47,13 @@
                                                 <img class="grid-gallery__image" src=<%= productoActual.Foto2 %> alt="">
                                             </a>
                                             <a class="grid-gallery__item" href=<%= productoActual.Foto3 %>>
-                                                <img class="grid-gallery__image" src=<%= productoActual.Foto3 %> alt="">
+                                                <img 
+                                                    class="grid-gallery__image" src=<%= productoActual.Foto3 %> alt="">
                                             </a>
 
                                             <%if (productoActual.Video != null && !productoActual.Video.Equals("")) { %>
-                                            <a class="grid-gallery__item" href=<%= productoActual.Video %>>
+                                            <a class="grid-gallery__
+                                                item" href=<%= productoActual.Video %>>
                                                 <video class="grid-gallery__image" height="240" width="360" controls>
                                                     <source src=<%= productoActual.Video %> type="video/mp4">
                                                 </video>
