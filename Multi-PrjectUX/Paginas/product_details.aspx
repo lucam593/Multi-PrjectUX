@@ -143,6 +143,10 @@
                                     <br />
                                     <span>Precio</span>
                                     <div class="price-box">
+                                        <%if (productoActual.PrecioAnterior > 0)
+                                            { %>
+                                         <span style="text-decoration:line-through;">₡<%= productoActual.PrecioAnterior %></span>
+                                        <%} %>
                                         <span>₡<%= productoActual.PrecioProducto %></span>
                                     </div>
 
