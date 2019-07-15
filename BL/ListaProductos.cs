@@ -15,7 +15,7 @@ namespace BL
             productos.Add(new Productos(1, "Mia Secret Esmalte", "Esmalte para uñas, disponible en colores negro y blanco.", 5000, "Mia Secret", "unas", 30,
                 "productos\\Producto_1_Mia_Secret\\Mia_Secret_F1.png",
                 "productos\\Producto_1_Mia_Secret\\Mia_Secret_F2.png",
-                "productos\\Producto_1_Mia_Secret\\Mia_Secret_F3.png",
+                "productos\\Producto_1_Mia_Secret\\Mia_Secret_F3.jpg",
                 "productos\\Producto_1_Mia_Secret\\Mia_Secret_Video.mp4"));
             productos.Add(new Productos(2, "Environmental Remover Pack", "Removedor de esmalte para uñas.", 100, "Miaoxi", "unas", 30,
                 "productos\\Producto_2_Environmental_Remover_Pack\\Env_Rem_Pack_F1.png",
@@ -25,7 +25,7 @@ namespace BL
             productos.Add(new Productos(3, "Esmalte transparente de uñas.", "esmalte protección de uñas.", 100, "Miaoxi", "unas", 30,
                 "productos\\Producto_3_Arobel_Base_Fortalecedora\\Arobel_Base_Fortalecedora_F1.png",
                 "productos\\Producto_3_Arobel_Base_Fortalecedora\\Arobel_Base_Fortalecedora_F2.jpg",
-                ""));
+                "productos\\Producto_3_Arobel_Base_Fortalecedora\\Arobel_Base_Fortalecedora_F3.jpg"));
             productos.Add(new Productos(4, "Himalayan Scrub", "Exfoliante corporal con sal del Himalaya.", 100, "Majestic Pure", "cremas", 30,
                 "productos\\Otros_productos\\1.jpg",
                 "productos\\Otros_productos\\2.jpg",

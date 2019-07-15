@@ -139,19 +139,11 @@
                                 <div class="product__info__main">
                                     <h1><%= productoActual.NombreProducto %></h1>
                                     <div class="product-reviews-summary d-flex">
-                                        <ul class="rating-summary d-flex">
-                                            <li><i class="zmdi zmdi-star-outline"></i></li>
-                                            <li><i class="zmdi zmdi-star-outline"></i></li>
-                                            <li><i class="zmdi zmdi-star-outline"></i></li>
-                                            <li class="off"><i class="zmdi zmdi-star-outline"></i></li>
-                                            <li class="off"><i class="zmdi zmdi-star-outline"></i></li>
-                                        </ul>
                                     </div>
+                                    <br />
+                                    <span>Precio</span>
                                     <div class="price-box">
-                                        <span><%= productoActual.PrecioProducto %></span>
-                                    </div>
-                                    <div class="product__overview">
-                                        <p><%= productoActual.DescripcionProducto %> </p>
+                                        <span>₡<%= productoActual.PrecioProducto %></span>
                                     </div>
 
                                     <div class="box-tocart d-flex">
@@ -176,117 +168,21 @@
                     <div class="product__info__detailed">
                         <div class="pro_details_nav nav justify-content-start" role="tablist">
                             <a class="nav-item nav-link active" data-toggle="tab" href="#nav-details" role="tab">Detalles</a>
-                            <a class="nav-item nav-link" data-toggle="tab" href="#nav-review" role="tab">Reseñas</a>
                         </div>
                         <div class="tab__container">
                             <!-- Start Single Tab Content -->
                             <div class="pro__tab_label tab-pane fade show active" id="nav-details" role="tabpanel">
                                 <div class="description__attribute">
-                                    <p><%= productoActual.DescripcionProducto %></p>
+                                    <p> Producto de <%= productoActual.Marca %>
+                                        <br />
+                                        <%= productoActual.DescripcionProducto %> 
+                                    </p>
                                 </div>
                             </div>
                             <!-- End Single Tab Content -->
                             <!-- Start Single Tab Content -->
                             <div class="pro__tab_label tab-pane fade" id="nav-review" role="tabpanel">
-                                <div class="review__attribute">
-                                    <h1>Reseñas de Clientes</h1>
-                                    <h2>Cliente 1</h2>
-                                    <div class="review__ratings__type d-flex">
-                                        <div class="review-ratings">
-                                            <div class="rating-summary d-flex">
-                                                <span>Calidad</span>
-                                                <ul class="rating d-flex">
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                    <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                </ul>
-                                            </div>
-
-                                            <div class="rating-summary d-flex">
-                                                <span>Precio</span>
-                                                <ul class="rating d-flex">
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                    <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                </ul>
-                                            </div>
-                                            <div class="rating-summary d-flex">
-                                                <span>Valor</span>
-                                                <ul class="rating d-flex">
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                    <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="review-content">
-                                            <p>Cliente 1</p>
-                                            <p>Reseña de Cliente 1</p>
-                                            <p>Publicado el 11/6/2018</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="review-fieldset">
-                                    <h2>You're reviewing:</h2>
-                                    <h3>Chaz Kangeroo Hoodie</h3>
-                                    <div class="review-field-ratings">
-                                        <div class="product-review-table">
-                                            <div class="review-field-rating d-flex">
-                                                <span>Quality</span>
-                                                <ul class="rating d-flex">
-                                                    <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                    <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                    <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                    <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                    <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                </ul>
-                                            </div>
-                                            <div class="review-field-rating d-flex">
-                                                <span>Price</span>
-                                                <ul class="rating d-flex">
-                                                    <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                    <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                    <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                    <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                    <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                </ul>
-                                            </div>
-                                            <div class="review-field-rating d-flex">
-                                                <span>Value</span>
-                                                <ul class="rating d-flex">
-                                                    <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                    <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                    <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                    <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                    <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="review_form_field">
-                                        <div class="input__box">
-                                            <span>Nickname</span>
-                                            <input id="nickname_field" type="text" name="nickname">
-                                        </div>
-                                        <div class="input__box">
-                                            <span>Summary</span>
-                                            <input id="summery_field" type="text" name="summery">
-                                        </div>
-                                        <div class="input__box">
-                                            <span>Review</span>
-                                            <textarea name="review"></textarea>
-                                        </div>
-                                        <div class="review-form-actions">
-                                            <button>Submit Review</button>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                             </div>
                             <!-- End Single Tab Content -->
                         </div>
@@ -295,21 +191,14 @@
                 </div>
                 <div class="col-lg-3 col-12 md-mt-40 sm-mt-40">
                     <div class="shop__sidebar">
-                        <aside class="wedget__categories poroduct--cat">
-                            <h3 class="wedget__title">Product Categories</h3>
-                            <ul>
-                                <li><a href="#">Categorias <span>(60)</span></a></li>
-                                <li><a href="#">Categorias <span>(3)</span></a></li>
-                                <li><a href="#">Categorias <span>(3)</span></a></li>
-                            </ul>
-                        </aside>
                         <aside class="wedget__categories pro--range">
                         </aside>
                         <aside class="wedget__categories poroduct--tag">
                             <h3 class="wedget__title">Etiquetas de Producto</h3>
                             <ul>
-                                <li><a href="#"><%= productoActual.Categoria %></a></li>
-                                <li><a href="#"><%= productoActual.Marca %></a></li>
+                                <li><a><%= productoActual.Categoria %></a></li>
+                                <li><a><%= productoActual.Marca %></a></li>
+                                <li><a><%= productoActual.NombreProducto %></a></li>
                             </ul>
                         </aside>
                         <aside class="wedget__categories sidebar--banner">

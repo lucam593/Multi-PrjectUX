@@ -18,12 +18,8 @@ namespace Multi_PrjectUX.Paginas
         {
 
             ListaProductos listaProductos = new ListaProductos();
-
          
-
             Productos prd = listaProductos.buscarProd(Request.QueryString["key"].ToString());
-
-         
 
             //Este será el producto que determine los datos que se mostrarán en el formulario.
             productoActual = (Productos)Session["productoActual"];
