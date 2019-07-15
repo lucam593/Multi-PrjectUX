@@ -16,13 +16,13 @@ namespace Multi_PrjectUX.Paginas
 
         protected void Page_Init(object sender, EventArgs e)
         {
-            /*
+
             List<Productos> productos = new List<Productos>();
             productos.Add(new Productos(111, "Mia Secret Esmalte", "Esmalte para uñas, disponible en colores negro y blanco.", 5000, "Mia Secret", 10, 30,
-                "productos\\Producto 1 Mia Secret\\Mia_Secret_F1.png",
-                "productos\\Producto 1 Mia Secret\\Mia_Secret_F2.png",
-                "productos\\Producto 1 Mia Secret\\Mia_Secret_F3.png",
-                "productos\\Producto 1 Mia Secret\\Mia_Secret_Video.mp4"));
+                "productos\\Producto_1_Mia_Secret\\Mia_Secret_F1.png",
+                "productos\\Producto_1_Mia_Secret\\Mia_Secret_F2.png",
+                "productos\\Producto_1_Mia_Secret\\Mia_Secret_F3.png",
+                "productos\\Producto_1_Mia_Secret\\Mia_Secret_Video.mp4"));
             productos.Add(new Productos(222, "Environmental Remover Pack", "Removedor de esmalte para uñas.", 100, "Miaoxi", 10, 30,
                 "productos\\Producto 2 Environmental Remover Pack\\Env_Rem_Pack_F1.png",
                 "productos\\Producto 2 Environmental Remover Pack\\Env_Rem_Pack_F2.png",
@@ -33,7 +33,7 @@ namespace Multi_PrjectUX.Paginas
                 "productos\\Producto 3 Arobel Base Fortalecedora\\Arobel_Base_Fortalecedora_F2.jpg",
                 ""));
 
-            Session["Productos"] = productos;*/
+            Session["Productos"] = productos;
 
             //Este será el producto que determine los datos que se mostrarán en el formulario.
             productoActual = (Productos)Session["productoActual"];

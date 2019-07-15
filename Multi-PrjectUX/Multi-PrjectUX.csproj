@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{25CAA8EA-51A1-40F6-83A7-847AB6EF2258}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Multi_PrjectUX</RootNamespace>
     <AssemblyName>Multi-PrjectUX</AssemblyName>
@@ -290,7 +290,6 @@
     <Content Include="Paginas\css\plugins\font-awesome.min.css" />
     <Content Include="Paginas\css\plugins\fotorama.css" />
     <Content Include="Paginas\css\plugins\jquery-ui.min.css" />
-    <Content Include="Paginas\css\plugins\lightbox.css" />
     <Content Include="Paginas\css\plugins\mainmenu.css" />
     <Content Include="Paginas\css\plugins\material-design-iconic-font.min.css" />
     <Content Include="Paginas\css\plugins\nivo-preview-2.css" />
@@ -575,13 +574,13 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>False</UseIIS>
+          <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>60606</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:60606/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
-          <UseCustomServer>True</UseCustomServer>
+          <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
           </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
