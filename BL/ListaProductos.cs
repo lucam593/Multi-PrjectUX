@@ -15,7 +15,7 @@ namespace BL
             productos.Add(new Productos(1, "Mia Secret Esmalte", "Esmalte para uñas, disponible en colores negro y blanco.", 5000, "Mia Secret", "unas", 30,
                 "productos\\Producto_1_Mia_Secret\\Mia_Secret_F1.png",
                 "productos\\Producto_1_Mia_Secret\\Mia_Secret_F2.png",
-                "productos\\Producto_1_Mia_Secret\\Mia_Secret_F3.png",
+                "productos\\Producto_1_Mia_Secret\\Mia_Secret_F3.jpg",
                 "productos\\Producto_1_Mia_Secret\\Mia_Secret_Video.mp4"));
             productos.Add(new Productos(2, "Environmental Remover Pack", "Removedor de esmalte para uñas.", 100, "Miaoxi", "unas", 30,
                 "productos\\Producto_2_Environmental_Remover_Pack\\Env_Rem_Pack_F1.png",
@@ -25,7 +25,7 @@ namespace BL
             productos.Add(new Productos(3, "Esmalte transparente de uñas.", "esmalte protección de uñas.", 100, "Miaoxi", "unas", 30,
                 "productos\\Producto_3_Arobel_Base_Fortalecedora\\Arobel_Base_Fortalecedora_F1.png",
                 "productos\\Producto_3_Arobel_Base_Fortalecedora\\Arobel_Base_Fortalecedora_F2.jpg",
-                ""));
+                "productos\\Producto_3_Arobel_Base_Fortalecedora\\Arobel_Base_Fortalecedora_F3.jpg"));
             productos.Add(new Productos(4, "Himalayan Scrub", "Exfoliante corporal con sal del Himalaya.", 100, "Majestic Pure", "cremas", 30,
                 "productos\\Otros_productos\\1.jpg",
                 "productos\\Otros_productos\\2.jpg",
@@ -58,34 +58,22 @@ namespace BL
                 "productos\\Otros_productos\\22.jpg",
                 "productos\\Otros_productos\\23.jpg",
                 "productos\\Otros_productos\\24.jpg"));
-
-            Productos productPromo1 = new Productos(12, "Rapid Wrinkle Repair", "Crema regeneradora y reparación de arrugas.", 100, "Neutrogena", "cremas", 30,
+            productos.Add(new Productos(12, "Rapid Wrinkle Repair", "Crema regeneradora y reparación de arrugas.", 100, "Neutrogena", "cremas", 30,
                 "productos\\Otros_productos\\25.jpg",
                 "productos\\Otros_productos\\26.jpg",
-                "productos\\Otros_productos\\27.jpg", true);
-
-            productos.Add(productPromo1);
-
-            Productos productPromo2 = new Productos(13, "Hialuronic Acid", "Crema Facial Hidratante con Ácido Hialurónico para piel seca.", 100, "Progenix", "cremas", 30,
+                "productos\\Otros_productos\\27.jpg", true, 150));
+            productos.Add(new Productos(13, "Hialuronic Acid", "Crema Facial Hidratante con Ácido Hialurónico para piel seca.", 100, "Progenix", "cremas", 30,
                 "productos\\Otros_productos\\28.jpg",
                 "productos\\Otros_productos\\29.jpg",
-                "productos\\Otros_productos\\30.jpg", true);
-
-            productos.Add(productPromo2);
-
-            Productos productPromo3 = new Productos(14, "Set de Manicura", "manicura profesional portátil 11 en 1.", 100, "Ophanie", "unas", 30,
+                "productos\\Otros_productos\\30.jpg", true, 125));
+            productos.Add(new Productos(14, "Set de Manicura", "manicura profesional portátil 11 en 1.", 100, "Ophanie", "unas", 30,
                 "productos\\Otros_productos\\31.jpg",
                 "productos\\Otros_productos\\32.jpg",
-                "productos\\Otros_productos\\33.jpg", true);
-
-            productos.Add(productPromo3);
-
-            Productos productPromo4 = new Productos(15, "Set de limas para uñas", "Kit de herramientas de manicura profesional para limas de uñas.", 100, "TSMADDTS", "unas", 30,
+                "productos\\Otros_productos\\33.jpg", true, 115));
+            productos.Add(new Productos(15, "Set de limas para uñas", "Kit de herramientas de manicura profesional para limas de uñas.", 100, "TSMADDTS", "unas", 30,
                "productos\\Otros_productos\\34.jpg",
                "productos\\Otros_productos\\35.jpg",
-               "productos\\Otros_productos\\36.jpg", true);
-
-            productos.Add(productPromo4);
+               "productos\\Otros_productos\\36.jpg", true, 140));
 
             return productos;
         }

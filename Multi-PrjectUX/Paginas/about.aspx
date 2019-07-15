@@ -80,7 +80,8 @@
                                 y de esta manera, garantizar la satisfacción de todos nuestros clientes.
 
                                 Contamos con un interés particular por la atención de personas con problemas
-                                auditivos, siendo 
+                                auditivos, siendo esta una necesidad particular que quizá no es atendida en el presente
+                                contexto.
                             </p>
                             <h5>Ubicación</h5>
                             <p>Centro de San Ramón, Alajuela</p>

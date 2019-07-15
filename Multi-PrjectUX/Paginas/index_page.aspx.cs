@@ -12,7 +12,8 @@ namespace Multi_PrjectUX
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+            List<Productos> ListaCarrito = new List<Productos>();
+            Session["ListaCarrito"] = ListaCarrito;
         }
     }
 }

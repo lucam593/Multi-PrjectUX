@@ -12,7 +12,7 @@
                             <nav class="bradcaump-content">
                               <a class="breadcrumb_item" href="index_page.aspx">Inicio</a>
                               <span class="brd-separetor">/</span>
-                              <span class="breadcrumb_item active">Catálogo</span>
+                              <span class="breadcrumb_item active">Promociones</span>
                             </nav>
                         </div>
                     </div>

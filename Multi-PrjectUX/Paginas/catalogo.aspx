@@ -50,11 +50,11 @@
 									<img width="336" height="374" src="<%Response.Write(item.Foto1.ToString());%>" " alt="portfolio images">
 								</a>
 								<div class="link">
-									<a href="product_details.aspx"><i class="fa fa-eye"></i></a>
+									<a href="product_details.aspx?key=<%Response.Write(item.CodigoProducto.ToString()); %>"><i class="fa fa-eye"></i></a>
 								</div>
 							</div>
 							<div class="content">
-								<h6><a href="portfolio-details.html"><%Response.Write(item.NombreProducto.ToString());%></a></h6>
+								<h6><a href="product_details.aspx?key=<%Response.Write(item.CodigoProducto.ToString()); %>"><%Response.Write(item.NombreProducto.ToString());%></a></h6>
 								<p><%Response.Write(item.Categoria.ToString()); %></p>
 							</div>
 						</div>

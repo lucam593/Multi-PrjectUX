@@ -286,6 +286,7 @@
     <Content Include="Paginas\fonts\fontawesome-webfont.svg" />
     <Content Include="Paginas\fonts\Simple-Line-Icons.svg" />
     <Content Include="Paginas\fonts\slick.svg" />
+    <Content Include="Paginas\images\bg\3.jpg" />
     <Content Include="Paginas\index_page.aspx" />
     <Content Include="Paginas\css\bootstrap.min.css" />
     <Content Include="Paginas\css\custom.css" />
@@ -326,7 +327,7 @@
     <Content Include="Paginas\images\best-sell-product\8.jpg" />
     <Content Include="Paginas\images\bg\1.jpg" />
     <Content Include="Paginas\images\bg\2.jpg" />
-    <Content Include="Paginas\images\bg\3.jpg" />
+    <Content Include="Paginas\images\bg\3_old_2.jpg" />
     <Content Include="Paginas\images\bg\3_old.jpg" />
     <Content Include="Paginas\images\bg\4.jpg" />
     <Content Include="Paginas\images\bg\4_old.jpg" />
@@ -511,6 +512,7 @@
     <Content Include="Paginas\productos\Producto_2_Environmental_Remover_Pack\Env_Rem_Pack_F4.jpg" />
     <Content Include="Paginas\productos\Producto_3_Arobel_Base_Fortalecedora\Arobel_Base_Fortalecedora_F1.png" />
     <Content Include="Paginas\productos\Producto_3_Arobel_Base_Fortalecedora\Arobel_Base_Fortalecedora_F2.jpg" />
+    <Content Include="Paginas\productos\Producto_3_Arobel_Base_Fortalecedora\Arobel_Base_Fortalecedora_F3.jpg" />
     <Content Include="Paginas\product_details.aspx" />
     <Content Include="boighor\team.html" />
     <Content Include="boighor\wishlist.html" />
