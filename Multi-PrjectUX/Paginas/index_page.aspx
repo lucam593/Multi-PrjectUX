@@ -48,7 +48,7 @@
         </div>
         <!-- End Slider area -->
  <div id="arrow-down" >
-     <a href="#second_seccion"> <i class="fa fa-chevron-down"></i></a>
+     <a href="#arrow-down"> <i class="fa fa-chevron-down"></i></a>
    
   </div>
         <br />
