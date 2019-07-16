@@ -8,7 +8,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="bradcaump__inner text-center">
-                        	<h2 class="bradcaump-title">Catálogo</h2>
+                        	<h2 class="bradcaump-title">Promociones</h2>
                             <nav class="bradcaump-content">
                               <a class="breadcrumb_item" href="index_page.aspx">Inicio</a>
                               <span class="brd-separetor">/</span>

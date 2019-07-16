@@ -55,7 +55,7 @@
                                     <li class="drop with--one--item"><a href="index_page.aspx">Inicio</a></li>
                                     <li class="drop"><a href="catalogo.aspx">Catálogo</a></li>
                                     <li class="drop"><a href="CatalogoPromociones.aspx">Promociones</a></li>
-                                    <li class="drop"><a href="#">Agendar Cita</a></li>
+                                    <li class="drop"><a href="AgendarCita.aspx">Agendar Cita</a></li>
                                     <li><a href="about.aspx">Sobre Nosotros</a></li>
                                 </ul>
                             </nav>
@@ -168,7 +168,7 @@
                                             <li><a href="single-product.html">Single Product</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="blog.html">Agendar Cita</a>
+                                    <li><a href="AgendarCita.aspx">Agendar Cita</a>
                                         <ul>
                                             <li><a href="blog.html">Blog Page</a></li>
                                             <li><a href="blog-details.html">Blog Details</a></li>
