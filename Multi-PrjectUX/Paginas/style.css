@@ -2319,7 +2319,7 @@ Elements Styles
         }
 
             .minicart-content-wrapper .mini_action .checkout__btn:hover {
-                background: #e59285 none repeat scroll 0 0;
+                background: #72cfcf none repeat scroll 0 0;
                 color: #fff;
             }
 
@@ -7596,7 +7596,7 @@ h3.widget-title-modal {
 }
 
     .cart__btn__list li a:hover {
-        background: #e59285 none repeat scroll 0 0;
+        background: #72cfcf none repeat scroll 0 0;
         color: #fff;
     }
 
@@ -7610,7 +7610,7 @@ h3.widget-title-modal {
 }
 
 .cart__total__amount {
-    background: #e59285 none repeat scroll 0 0;
+    background: #72cfcf none repeat scroll 0 0;
     display: flex;
     height: 60px;
     justify-content: space-between;
