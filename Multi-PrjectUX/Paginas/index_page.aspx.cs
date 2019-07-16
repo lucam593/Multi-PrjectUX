@@ -12,9 +12,6 @@ namespace Multi_PrjectUX
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            List<Productos> ListaCarrito = new List<Productos>();
-            Session["ListaCarrito"] = ListaCarrito;
-
             List<Cita> listaCitas = new List<Cita>();
             ListaCitas lc = new ListaCitas();
             listaCitas = lc.cargarCitas();

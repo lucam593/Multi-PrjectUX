@@ -20,7 +20,7 @@
 .form-container #body_agendar {
     display: block;
     margin: 30px auto;
-    background-color: #e59285;
+    background-color: #72cfcf;
     padding: 12px 30px;
     font-size: 20px;
     color: white;
@@ -31,5 +31,5 @@
 }
 
 .form-container #body_agendar:hover {
-    background-color: #9a0606;
+    background-color: #63b0b0;
 }
