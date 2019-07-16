@@ -14,6 +14,12 @@ namespace Multi_PrjectUX
         {
             List<Productos> ListaCarrito = new List<Productos>();
             Session["ListaCarrito"] = ListaCarrito;
+
+            List<Cita> listaCitas = new List<Cita>();
+            ListaCitas lc = new ListaCitas();
+            listaCitas = lc.cargarCitas();
+
+            Session["ListaCitas"] = listaCitas;
         }
     }
 }

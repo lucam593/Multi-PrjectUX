@@ -34,7 +34,7 @@
 		            				<h2>Solicita tu <span>Cita </span></h2>
 		            				<h2>de <span>Belleza </span></h2>
 		            				<h2>Justo <span>Aquí </span></h2>
-				                   	<a class="shopbtn" href="#">Agendar ahora</a>
+				                   	<a class="shopbtn" href="AgendarCita.aspx">Agendar ahora</a>
 		            			</div>
 	            			</div>
 	            		</div>
@@ -64,7 +64,7 @@
                     <h2 class="letra-cincel" style="color:#0d6767;">CITAS</h2>
                     <p style="text-align: justify;">Como sabemos que es dificil encontrar un Salón abierto cuando lo necesitas, te ofrecemos la posibilidad de agendar con nosotros ¡En el momento que lo necesites!</p>
                      <br />
-                    <a class="info-button" href="#" style=" font-family: 'Almendra', sans-serif;">Agendar</a>
+                    <a class="info-button" href="AgendarCita.aspx" style=" font-family: 'Almendra', sans-serif;">Agendar</a>
 
 
                 </div>

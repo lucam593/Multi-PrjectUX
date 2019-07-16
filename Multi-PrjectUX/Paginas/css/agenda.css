@@ -1,0 +1,35 @@
+﻿.form-container .label {
+    width: 200px;
+    font-size: 18px;
+    display: block
+}
+
+.form-container .form-group{
+    display: inline-block;
+}
+
+.form-container input, .form-container select {
+    height: 37px;
+    border: 1px #ced4da solid;
+    border-radius: 3px;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 18px;
+}
+
+.form-container #body_agendar {
+    display: block;
+    margin: 30px auto;
+    background-color: #e59285;
+    padding: 12px 30px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 180px;
+    height: auto;
+}
+
+.form-container #body_agendar:hover {
+    background-color: #9a0606;
+}

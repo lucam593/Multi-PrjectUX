@@ -279,9 +279,11 @@
     <Content Include="boighor\shop-grid.html" />
     <Content Include="boighor\single-product.html" />
     <Content Include="boighor\style.css" />
+    <Content Include="Paginas\AgendarCita.aspx" />
     <Content Include="Paginas\Carrito.aspx" />
     <Content Include="Paginas\catalogo.aspx" />
     <Content Include="Paginas\CatalogoPromociones.aspx" />
+    <Content Include="Paginas\css\agenda.css" />
     <Content Include="Paginas\fonts\bicon.svg" />
     <Content Include="Paginas\fonts\fontawesome-webfont.svg" />
     <Content Include="Paginas\fonts\Simple-Line-Icons.svg" />
@@ -521,6 +523,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Paginas\AgendarCita.aspx.cs">
+      <DependentUpon>AgendarCita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\AgendarCita.aspx.designer.cs">
+      <DependentUpon>AgendarCita.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Paginas\Carrito.aspx.cs">
       <DependentUpon>Carrito.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
