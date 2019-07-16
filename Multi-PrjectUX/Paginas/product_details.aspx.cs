@@ -50,8 +50,25 @@ namespace Multi_PrjectUX.Paginas
             }
             else
             {
-                productoActual.Cantidad = cantidad;
-                ((List<Productos>)Session["ListaCarrito"]).Add(productoActual);
+                List<Productos> lista = (List<Productos>)Session["ListaCarrito"];
+                bool existe = false;
+
+                foreach(Productos p in lista)
+                {
+                    if (p.CodigoProducto.Equals(productoActual.CodigoProducto))
+                    {
+                        Response.Write("<script>alert('El producto ya existe en el carrito);</script>");
+                        existe = true;
+                        break;
+                    }
+                }
+                if (!existe)
+                {
+                    productoActual.Cantidad = cantidad;
+                    (lista).Add(productoActual);
+                    Response.Write("<script>alert('El producto fue añadido exitosamente al carrito);</script>");
+                }
+                Response.Redirect("Carrito.aspx");
             }
         }
     }

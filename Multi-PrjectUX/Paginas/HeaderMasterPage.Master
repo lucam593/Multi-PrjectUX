@@ -70,13 +70,6 @@
                                             <div class="micart__close">
                                                 <span>cerrar</span>
                                             </div>
-                                            <div class="items-total d-flex justify-content-between">
-                                                <span>3 productos</span>
-                                                <span>Subtotal</span>
-                                            </div>
-                                            <div class="total_amount text-right">
-                                                <span>$66.00</span>
-                                            </div>
                                             <div class="mini_action checkout">
                                                 <a class="checkout__btn" href="Carrito.aspx">Ver y editar carrito</a>
                                             </div>
