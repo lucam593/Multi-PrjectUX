@@ -52,6 +52,7 @@
         scrollSpeed: 900,
         animation: 'slide'
     });
+   
 
 /*=========== Mobile Menu ===========*/
     $('nav.mobilemenu__nav').meanmenu({

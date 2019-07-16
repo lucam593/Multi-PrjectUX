@@ -1,6 +1,66 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Paginas/HeaderMasterPage.Master" AutoEventWireup="true" CodeBehind="Carrito.aspx.cs" Inherits="Multi_PrjectUX.Paginas.Carrito" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+
+    <script>
+
+        function comprar() {
+            alert("GRACIAS POR SU COMPRA");
+            document.getElementById('tablaCarrito').innerHTML = '';
+            document.getElementById('total').innerHTML = '';
+        }
+
+        function calcular() {
+            // obtenemos todas las filas del tbody
+            var filas = document.querySelectorAll("#tablaCarrito tbody tr");
+
+            var total = 0;
+
+            // recorremos cada una de las filas
+            filas.forEach(function (e) {
+
+                // obtenemos las columnas de cada fila
+                var columnas = e.querySelectorAll("td");
+
+                // obtenemos los valores de la cantidad y importe
+                var cantidad = parseFloat(columnas[2].textContent);
+                var importe = parseFloat(columnas[3].textContent);
+
+                // mostramos el total por fila
+                columnas[4].textContent = (cantidad * importe).toFixed(2);
+
+                total += cantidad * importe;
+            });
+
+            // mostramos la suma total
+            prueba();
+        }
+
+
+        function prueba() {
+            //Defino los totales de mis 2 columnas en 0
+            var total_col1 = 0;
+            //Recorro todos los tr ubicados en el tbody
+            $('#tablaCarrito tbody').find('tr').each(function (i, el) {
+
+                //Voy incrementando las variables segun la fila ( .eq(0) representa la fila 1 )     
+                total_col1 += parseFloat($(this).find('td').eq(4).text());
+
+            });
+            //Muestro el resultado en el th correspondiente a la columna
+            document.getElementById("total").innerHTML = "₡ " + total_col1;
+        }
+
+        $(function () {
+            $(document).on('click', '.borrar', function (event) {
+                event.preventDefault();
+                $(this).closest('tr').remove();
+                calcular();
+            });
+        });
+    </script>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
 
@@ -12,8 +72,14 @@
     <!-- Main wrapper -->
     <div class="wrapper" id="wrapper">
 
+
+        <asp:ScriptManager ID="sm1" runat="server"
+            EnablePageMethods="True">
+        </asp:ScriptManager>
+
+
         <!-- Header -->
-<%--        <header id="wn__header" class="oth-page header__area header__absolute sticky__header">
+        <%--        <header id="wn__header" class="oth-page header__area header__absolute sticky__header">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-4 col-sm-4 col-7 col-lg-2">
@@ -336,7 +402,7 @@
         </header>--%>
         <!-- //Header -->
         <!-- Start Search Popup -->
-<%--        <div class="box-search-content search_active block-bg close__top">
+        <%--        <div class="box-search-content search_active block-bg close__top">
             <form id="search_mini_form" class="minisearch" action="#">
                 <div class="field__search">
                     <input type="text" placeholder="Search entire store here...">
@@ -352,7 +418,7 @@
         <!-- End Search Popup -->
         <!-- Start Bradcaump area -->
         <div class="ht__bradcaump__area bg-image--3">
-<%--            <div class="container">
+            <%--            <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="bradcaump__inner text-center">
@@ -373,14 +439,79 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 ol-lg-12">
-                       <%-- <form>--%>
-                            <div class="table-content wnro__table table-responsive">
+                        <%-- <form>--%>
+                        <div class="table-content wnro__table table-responsive">
 
 
-                                <asp:GridView ID="listaCarrito" CssClass="table" runat="server"></asp:GridView>
+                            <asp:GridView ID="listaCarrito" CssClass="table" runat="server">
+                            </asp:GridView>
 
 
-                              <%--  <table>
+
+                            <asp:Repeater ID="Repeater1" runat="server">
+                                <HeaderTemplate>
+                                    <table id="tablaCarrito">
+                                        <thead>
+                                            <tr class="title-top">
+                                                <th class="product-thumbnail">Imagen</th>
+                                                <th class="product-name">Producto</th>
+                                                <th class="product-price">Precio</th>
+                                                <th class="product-quantity">Cantidad</th>
+                                                <th class="product-subtotal">Total</th>
+                                                <th class="product-remove">Eliminar</th>
+                                            </tr>
+                                        </thead>
+                                </HeaderTemplate>
+
+                                <ItemTemplate>
+                                    <tr>
+                                        <td class="product-thumbnail">
+                                            <img src="<%# Eval("Foto1") %>" alt="product img"></td>
+                                        <td class="product-name"><span class="amount"><%# Eval("NombreProducto") %></span></td>
+                                        <td class="product-price"><span class="amount"><%# Eval("PrecioProducto")%></span></td>
+                                        <td class="product-subtotal">
+                                            <span><%# Eval("Cantidad") %></span></td>
+                                        <td class="product-subtotal"><span class="amount"><%# (int)Eval("PrecioProducto") * (int)Eval("Cantidad") %></span></td>
+                                        <td class="product-remove"><i class="zmdi zmdi-delete borrar"></i></td>
+                                    </tr>
+                                </ItemTemplate>
+
+                                <%--                               <AlternatingItemTemplate>
+                                    <tr>
+                                        <td>
+                                            <asp:Label runat="server" ID="Label3"
+                                                Text='<%# Eval("CategoryName") %>' />
+                                        </td>
+                                        <td>
+                                            <asp:Label runat="server" ID="Label4"
+                                                Text='<%# Eval("Description") %>' />
+                                        </td>
+                                    </tr>
+                                </AlternatingItemTemplate>--%>
+
+                                <FooterTemplate>
+                                    </table> 
+                                </FooterTemplate>
+                            </asp:Repeater>
+
+
+
+
+
+                            <%--                            <asp:GridView ID="vistaAgenda" runat="server" CssClass="table"
+                                Style="text-align: center" AutoGenerateColumns="false" HeaderStyle-CssClass="bg-light"
+                                HeaderStyle-ForeColor="DimGray" GridLines="None"
+                                OnRowCommand="vistaAgenda_RowCommand"
+                                OnRowDataBound="vistaAgenda_RowDataBound" RowStyle-CssClass="resaltado">
+                                <Columns>
+                                    <asp:BoundField HeaderText="Hora" DataField="Hora" ControlStyle-Width="33.3%" />
+                                    <asp:BoundField HeaderText="Estado" DataField="Estado" ControlStyle-Width="33.3%" />
+                                    <asp:ButtonField HeaderText="Acción" CommandName="Seleccionar"
+                                        ControlStyle-CssClass="btn btn-neutro fas fa-edit" runat="server" ControlStyle-Width="33.3%" />
+                                </Columns>
+                            </asp:GridView>
+
+                            <%--  <table>
                                     <thead>
                                         <tr class="title-top">
                                             <th class="product-thumbnail">Imagen</th>
@@ -424,14 +555,11 @@
                                         </tr>
                                     </tbody>
                                 </table>--%>
-                            </div>
+                        </div>
                         <%--</form>--%>
                         <div class="cartbox__btn">
                             <ul class="cart__btn__list d-flex flex-wrap flex-md-nowrap flex-lg-nowrap justify-content-between">
-                                <li><a href="#">Coupon Code</a></li>
-                                <li><a href="#">Apply Code</a></li>
-                                <li><a href="#">Update Cart</a></li>
-                                <li><a href="#">Check Out</a></li>
+                                <li><a href="index_page.aspx" onclick="comprar();">Realizar Compra</a> </li>
                             </ul>
                         </div>
                     </div>
@@ -439,19 +567,9 @@
                 <div class="row">
                     <div class="col-lg-6 offset-lg-6">
                         <div class="cartbox__total__area">
-                            <div class="cartbox-total d-flex justify-content-between">
-                                <ul class="cart__total__list">
-                                    <li>Cart total</li>
-                                    <li>Sub Total</li>
-                                </ul>
-                                <ul class="cart__total__tk">
-                                    <li>$70</li>
-                                    <li>$70</li>
-                                </ul>
-                            </div>
                             <div class="cart__total__amount">
-                                <span>Grand Total</span>
-                                <span>$140</span>
+                                <span>Total de la compra</span>
+                                <span id="total">₡ <%=Session["TotalCarrito"].ToString()%></span>
                             </div>
                         </div>
                     </div>
@@ -460,7 +578,7 @@
         </div>
         <!-- cart-main-area end -->
         <!-- Footer Area -->
-<%--        <footer id="wn__footer" class="footer__area bg__cat--8 brown--color">
+        <%--        <footer id="wn__footer" class="footer__area bg__cat--8 brown--color">
             <div class="footer-static-top">
                 <div class="container">
                     <div class="row">
@@ -526,6 +644,63 @@
     <script src="js/active.js"></script>
 
 
+    <script>
+
+        function comprar() {
+            alert("GRACIAS POR SU COMPRA");
+            document.getElementById('tablaCarrito').innerHTML = '';
+            document.getElementById('total').innerHTML = '';
+        }
+
+        function calcular() {
+            // obtenemos todas las filas del tbody
+            var filas = document.querySelectorAll("#tablaCarrito tbody tr");
+
+            var total = 0;
+
+            // recorremos cada una de las filas
+            filas.forEach(function (e) {
+
+                // obtenemos las columnas de cada fila
+                var columnas = e.querySelectorAll("td");
+
+                // obtenemos los valores de la cantidad y importe
+                var cantidad = parseFloat(columnas[2].textContent);
+                var importe = parseFloat(columnas[3].textContent);
+
+                // mostramos el total por fila
+                columnas[4].textContent = (cantidad * importe).toFixed(2);
+
+                total += cantidad * importe;
+            });
+
+            // mostramos la suma total
+            prueba();
+        }
+
+
+        function prueba() {
+            //Defino los totales de mis 2 columnas en 0
+            var total_col1 = 0;
+            //Recorro todos los tr ubicados en el tbody
+            $('#tablaCarrito tbody').find('tr').each(function (i, el) {
+
+                //Voy incrementando las variables segun la fila ( .eq(0) representa la fila 1 )     
+                total_col1 += parseFloat($(this).find('td').eq(4).text());
+
+            });
+            //Muestro el resultado en el th correspondiente a la columna
+            document.getElementById("total").innerHTML = "₡ " + total_col1;
+        }
+
+        $(function () {
+            $(document).on('click', '.borrar', function (event) {
+                event.preventDefault();
+                $(this).closest('tr').remove();
+                calcular();
+            });
+        });
+    </script>
 
 
 </asp:Content>

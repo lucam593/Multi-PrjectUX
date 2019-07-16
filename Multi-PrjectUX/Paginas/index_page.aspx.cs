@@ -20,6 +20,12 @@ namespace Multi_PrjectUX
             listaCitas = lc.cargarCitas();
 
             Session["ListaCitas"] = listaCitas;
+            
+            if (Session["ListaCarrito"] == null)  
+            {
+                List<Productos> ListaCarrito = new List<Productos>();
+                Session["ListaCarrito"] = ListaCarrito;
+            }
         }
     }
 }
