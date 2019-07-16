@@ -559,7 +559,7 @@
                         <%--</form>--%>
                         <div class="cartbox__btn">
                             <ul class="cart__btn__list d-flex flex-wrap flex-md-nowrap flex-lg-nowrap justify-content-between">
-                                <li><a href="index_page.aspx" onclick="comprar();" >Realizar Compra</a> </li>
+                                <li><a href="index_page.aspx" onclick="comprar();">Realizar Compra</a> </li>
                             </ul>
                         </div>
                     </div>
@@ -642,6 +642,65 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/active.js"></script>
+
+
+    <script>
+
+        function comprar() {
+            alert("GRACIAS POR SU COMPRA");
+            document.getElementById('tablaCarrito').innerHTML = '';
+            document.getElementById('total').innerHTML = '';
+        }
+
+        function calcular() {
+            // obtenemos todas las filas del tbody
+            var filas = document.querySelectorAll("#tablaCarrito tbody tr");
+
+            var total = 0;
+
+            // recorremos cada una de las filas
+            filas.forEach(function (e) {
+
+                // obtenemos las columnas de cada fila
+                var columnas = e.querySelectorAll("td");
+
+                // obtenemos los valores de la cantidad y importe
+                var cantidad = parseFloat(columnas[2].textContent);
+                var importe = parseFloat(columnas[3].textContent);
+
+                // mostramos el total por fila
+                columnas[4].textContent = (cantidad * importe).toFixed(2);
+
+                total += cantidad * importe;
+            });
+
+            // mostramos la suma total
+            prueba();
+        }
+
+
+        function prueba() {
+            //Defino los totales de mis 2 columnas en 0
+            var total_col1 = 0;
+            //Recorro todos los tr ubicados en el tbody
+            $('#tablaCarrito tbody').find('tr').each(function (i, el) {
+
+                //Voy incrementando las variables segun la fila ( .eq(0) representa la fila 1 )     
+                total_col1 += parseFloat($(this).find('td').eq(4).text());
+
+            });
+            //Muestro el resultado en el th correspondiente a la columna
+            document.getElementById("total").innerHTML = "₡ " + total_col1;
+        }
+
+        $(function () {
+            $(document).on('click', '.borrar', function (event) {
+                event.preventDefault();
+                $(this).closest('tr').remove();
+                calcular();
+            });
+        });
+    </script>
 
 
 </asp:Content>
